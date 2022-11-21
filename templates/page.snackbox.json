@@ -1,0 +1,192 @@
+{
+  "sections": {
+    "1648030005ebf5f71c": {
+      "type": "image-banner",
+      "blocks": {
+        "1648030005f64ac356-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Snackbox: Die kleine Motivationsspritze",
+            "heading_size": "h0"
+          }
+        },
+        "1648030005f64ac356-1": {
+          "type": "text",
+          "settings": {
+            "text": "Kleine Snacks sorgen für motivierten Teamspirit. Das Hüngerchen zwischendurch kann Euch nichts mehr anhaben: In Eurer persönlichen Snackbox findet Ihr immer die passende, leckere Kleinigkeit. Die Snackbox tauschen wir in gewünschter Häufigkeit aus - damit die gute Laune immer anhält.",
+            "text_style": "subtitle"
+          }
+        },
+        "1648030005f64ac356-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1648030005f64ac356-0",
+        "1648030005f64ac356-1",
+        "1648030005f64ac356-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/custom_resized_2229c1fc-2d16-459c-a6f8-6c231d898e35.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "164729709760f50fb3": {
+      "type": "page__text-img",
+      "settings": {
+        "color": "",
+        "title_color": "",
+        "text_align": "left",
+        "bg_img": "shopify:\/\/shop_images\/29851.jpg",
+        "title": "Verwöhne Dein Team mit Leckeren Snacks",
+        "sub_title": "",
+        "text": "<p>Süsse Snacks? Salzige Snacks? Die Entscheidung ist kein Problem - Deine Breaky Snackbox kannst Du so bestücken, wie es Deinem Team am besten passt. Du kannst aus einer gluschtigen Auswahl an Markenprodukten auswählen. Formtiefs durch den kleinen Hunger sind kein Thema mehr, denn ab sofort stehen immer schnelle Snacks für zwischendurch bereit. <\/p><p>Einfach, vielseitig und praktisch: Die Snackbox wird in von Dir gewünschten Abständen von unserem Kurier ausgetauscht. Ihr bedient Euch nach Lust und Laune an den kleinen Snacks und bezahlt an der integrierten Kasse oder per TWINT. Stell jetzt Deine individuelle Snackbox zusammen - wir unterstützen Dich gerne dabei.<\/p>",
+        "text2": "",
+        "acc_title": "",
+        "acc_text": ""
+      }
+    },
+    "16473704365e78a49c": {
+      "type": "page__slider",
+      "disabled": true,
+      "blocks": {
+        "90b0a996-0bf1-493e-a017-9d90d7dc9ebc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_1.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "b0cef040-136f-4e63-a668-dd5155764386": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "d915680b-df9b-415c-b74f-0928902e6374": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_2.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "c04635b6-bbb9-4313-8b52-eed9db779856": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_3.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "472556e9-1e4d-4edb-9aac-a02b74a8aeb8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_4.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "359c444d-df29-4023-8bc4-2155f91b6474": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_5.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        },
+        "5595b108-3d4e-4145-8606-a1c047b142bf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PikPng.com_banana-peel-png_654126_6.png",
+            "title": "",
+            "text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "90b0a996-0bf1-493e-a017-9d90d7dc9ebc",
+        "b0cef040-136f-4e63-a668-dd5155764386",
+        "d915680b-df9b-415c-b74f-0928902e6374",
+        "c04635b6-bbb9-4313-8b52-eed9db779856",
+        "472556e9-1e4d-4edb-9aac-a02b74a8aeb8",
+        "359c444d-df29-4023-8bc4-2155f91b6474",
+        "5595b108-3d4e-4145-8606-a1c047b142bf"
+      ],
+      "settings": {
+        "color": "#f2f2f2",
+        "title": "Ein Kernsortiment an Früchten"
+      }
+    },
+    "1647933041e1df398a": {
+      "type": "rich-text",
+      "blocks": {
+        "1647933041a4e37723-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mach jetzt Dein Büro zu einem schmackhafteren Ort.",
+            "heading_size": "h1"
+          }
+        },
+        "1647933041a4e37723-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erzähle uns ein wenig über Deine Bedürfnisse, Deinen Geschmack und Dein Team. Wir kontaktieren Dich umgehend und erarbeiten mit Dir ein Angebot, wie Dein Team erfrischt, glücklich und produktiv bleibt.<\/p>"
+          }
+        },
+        "1647933041a4e37723-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "JETZT KONTAKTIEREN",
+            "button_link": "shopify:\/\/pages\/angebot-anfordern",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1647933041a4e37723-0",
+        "1647933041a4e37723-1",
+        "1647933041a4e37723-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "1648030005ebf5f71c",
+    "164729709760f50fb3",
+    "16473704365e78a49c",
+    "1647933041e1df398a"
+  ]
+}

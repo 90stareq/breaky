@@ -1,0 +1,163 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="expnd__top">
+    <div class="expnd__img">
+        {% if section.settings.bg_img != blank %}
+            <img src="{{ section.settings.bg_img | img_url: 'master' }}" alt="{{ section.settings.bg_img.alt }}">
+        {% endif %}
+
+        <div class="exp-top__content">
+            {% if section.settings.img_icon != blank %}
+                <img src="{{ section.settings.img_icon | img_url: '300x' }}" alt="{{ section.settings.img_icon.alt }}">
+            {% endif %}
+
+            {% if section.settings.img_icon != blank %}
+                <div class="exp__title section__title">
+                    {{ section.settings.title }}
+                </div>
+            {% endif %}
+
+            
+        </div>
+
+        {% if section.settings.ex-btn_text != blank %}
+            <div onclick="handleExpClick()" class="exp__title section__ex-btn_text">
+                <div class="ex-btn__text">
+                    {{ section.settings.ex-btn_text }}
+                </div>
+                <div class="ex-btn-x">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<div class="expnd__bottom">
+    <div class="page-width">
+        <div class="expnd__inner">
+            {% if section.settings.ex_title != blank %}
+                <div class="section__title exp__title">
+                    {{ section.settings.ex_title }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.ex_text != blank %}
+                <div class="exp__text">
+                    {{ section.settings.ex_text }}
+                </div>
+            {% endif %}
+
+            <div class="exp__items">
+                {% for block in section.blocks %}
+                    <div class="exp__item">
+                        <div class="exp__item__per">
+                            {{ block.settings.percent }}%
+                        </div>
+
+                        <div class="exp__item__text">
+                            {{ block.settings.text }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="exp__bottom">
+                <div class="exp-btn__text">
+                    {{ section.settings.ex_text2 }}
+                </div>
+
+                <div class="exp-btn__src">
+                    {{ section.settings.ex_source }}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Expandable",
+        "presets": [
+            {
+                "name": "Expandable"
+            }
+        ],
+        "class": "expandable__section",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "bg_img",
+                "label": "Background Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_icon",
+                "label": "Image Icon"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "ex-btn_text",
+                "label": "Expandalbe Button Text",
+                "default": "Weiterlesen"
+            },
+            {
+                "type": "text",
+                "id": "ex_title",
+                "label": "Expandable Title"
+            },
+            {
+                "type": "richtext",
+                "id": "ex_text",
+                "label": "Expandable Text"
+            },
+            {
+                "type": "richtext",
+                "id": "ex_text2",
+                "label": "Expandable Text 2"
+            },
+            {
+                "type": "richtext",
+                "id": "ex_source",
+                "label": "Expandable Source"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Item",
+                "settings": [
+                    {
+                        "type": "number",
+                        "id": "percent",
+                        "label": "Percentage",
+                        "default": 90
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+
+
+<script>
+
+    const handleExpClick = () => {
+        document.querySelector("body").classList.toggle("show-expand");
+    }
+
+</script>

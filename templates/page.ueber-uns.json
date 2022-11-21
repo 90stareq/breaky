@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "1649338988acd5948c": {
+      "type": "page__cofee-solution",
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/hannah-busing-Zyx1bK9mqmA-unsplash_1.jpg",
+        "title": "Entdecke mit Breaky, was es mit dem ganzen Buzz auf sich hat",
+        "cstm_css": ""
+      }
+    },
+    "1649339009c013fe88": {
+      "type": "image-with-text",
+      "blocks": {
+        "1649339008881ac0b7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Triff das Breaky Team",
+            "heading_size": "h1"
+          }
+        },
+        "1649339008881ac0b7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jeder kann Produkte verkaufen, aber nicht jeder kann den hervorragenden Kundenservice bieten, für den Breakybekannt ist. Unser Team ist wie eine Familie, mit jahrzehntelanger Erfahrung, die zusammenarbeitet, um die individuellen Bedürfnisse jedes einzelnen Kunden zu erfüllen. Viele unserer Mitarbeiter sind schon seit fast 20 Jahren bei uns und wir haben vor, noch viel länger hier zu sein, um dir den besten Kaffee-, Früchte & Snacklösungen zu bieten.<br\/><\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "1649339008881ac0b7-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649339008881ac0b7-0",
+        "1649339008881ac0b7-1",
+        "1649339008881ac0b7-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/team_compress.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "1649338988acd5948c",
+    "1649339009c013fe88"
+  ]
+}

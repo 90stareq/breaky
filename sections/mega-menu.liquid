@@ -1,0 +1,519 @@
+<div class="page-width">
+    <div class="mm__inner">
+        {% for block in section.blocks %}
+            <div onmouseenter="handleHoverOver(this)" onmouseleave="handleHoverOver(this)" class="mm__item">
+                <div class="mm__top">
+                    <a href="{{block.settings.single_link}}" class="mm__top-link">
+                        {% if block.settings.menu_img != blank %}
+                            <div class="mm__top__img">
+                                <img src="{{block.settings.menu_img | img_url: '50x'}}" alt="icon">
+                            </div>
+                        {% endif %}
+                        <div class="mm__top__text">
+                            {{block.settings.menu_title}}
+                        </div>
+                    </a>
+                </div>
+                {% if block.settings.isMegamenu %}
+                    <div class="mm__childrens">
+                        <div class="mm__child mm__col1">
+                            {% if block.settings.layout1 == "img_text" %}
+                                <a href="{{block.settings.col1_link1}}" class="mm__link">
+                                <div class="mm__img-text">
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col1_text1}}
+                                        </div>
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col1_image1 | img_url: '200x'}}" alt="{{block.settings.col1_image1.alt}}">
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout1 == "img_text1" %}
+                            <a href="{{block.settings.col1_link2}}" class="mm__link">
+                                <div class="mm__img-text2">
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col1_image1 | img_url: '200x'}}" alt="{{block.settings.col1_image1.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col1_text1}}
+                                            </div>
+                                        </div>
+
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col1_image2 | img_url: '200x'}}" alt="{{block.settings.col1_image2.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col1_text2}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout1 == "full_width_img" %}
+                            <a href="{{block.settings.col1_link3}}" class="mm__link">
+                                <div class="mm__ful-width-img">
+                                        <img src="{{block.settings.col1_full_img | img_url: '300x'}}" alt="{{block.settings.col1_full_img.alt}}">
+                                    </div>
+                                </a>
+                            {% endif %}
+                        </div>
+
+                        <div class="mm__child mm__col2">
+                            {% if block.settings.layout2 == "img_text" %}
+                                <a href="{{block.settings.col2_link1}}" class="mm__link">
+                                    <div class="mm__img-text">
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col2_text1}}
+                                        </div>
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col2_image1 | img_url: '200x'}}" alt="{{block.settings.col2_image1.alt}}">
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout2 == "img_text1" %}
+                            <a href="{{block.settings.col2_link2}}" class="mm__link">
+                                <div class="mm__img-text2">
+                                    <div class="mm__img-text2__item">
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col2_image1 | img_url: '200x'}}" alt="{{block.settings.col2_image1.alt}}">
+                                        </div>
+
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col2_text1}}
+                                        </div>
+                                    </div>
+
+                                    <div class="mm__img-text2__item">
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col2_image2 | img_url: '200x'}}" alt="{{block.settings.col2_image2.alt}}">
+                                        </div>
+
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col2_text2}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            {% elsif block.settings.layout2 == "full_width_img" %}
+                            <a href="{{block.settings.col2_link3}}" class="mm__link">
+                                <div class="mm__ful-width-img">
+                                    <img src="{{block.settings.col2_full_img | img_url: '300x'}}" alt="{{block.settings.col2_full_img.alt}}">
+                                </div>
+                            </a>
+                            {% endif %}
+                        </div>
+
+                        <div class="mm__child mm__col3">
+                            {% if block.settings.layout3 == "img_text" %}
+                                <a href="{{block.settings.col3_link1}}" class="mm__link">
+                                    <div class="mm__img-text">
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col3_text1}}
+                                        </div>
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col3_image1 | img_url: '200x'}}" alt="{{block.settings.col3_image1.alt}}">
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout3 == "img_text1" %}
+                                <a href="{{block.settings.col3_link2}}" class="mm__link">
+                                    <div class="mm__img-text2">
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col3_image1 | img_url: '200x'}}" alt="{{block.settings.col3_image1.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col3_text1}}
+                                            </div>
+                                        </div>
+
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col3_image2 | img_url: '200x'}}" alt="{{block.settings.col3_image2.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col3_text2}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout3 == "full_width_img" %}
+                                <a href="{{block.settings.col3_link3}}" class="mm__link">
+                                    <div class="mm__ful-width-img">
+                                        <img src="{{block.settings.col3_full_img | img_url: '300x'}}" alt="{{block.settings.col3_full_img.alt}}">
+                                    </div>
+                                </a>
+                            {% endif %}
+                        </div>
+
+                        <div class="mm__child mm__col4">
+                            {% if block.settings.layout4 == "img_text" %}
+                                <a href="{{block.settings.col4_link1}}" class="mm__link">
+                                    <div class="mm__img-text">
+                                        <div class="mm__img-text__text">
+                                            {{block.settings.col4_text1}}
+                                        </div>
+                                        <div class="mm__img-text__img">
+                                            <img src="{{block.settings.col4_image1 | img_url: '200x'}}" alt="{{block.settings.col4_image1.alt}}">
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout4 == "img_text1" %}
+                                <a href="{{block.settings.col4_link2}}" class="mm__link">
+                                    <div class="mm__img-text2">
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col4_image1 | img_url: '200x'}}" alt="{{block.settings.col4_image1.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col4_text1}}
+                                            </div>
+                                        </div>
+
+                                        <div class="mm__img-text2__item">
+                                            <div class="mm__img-text__img">
+                                                <img src="{{block.settings.col4_image2 | img_url: '200x'}}" alt="{{block.settings.col4_image2.alt}}">
+                                            </div>
+
+                                            <div class="mm__img-text__text">
+                                                {{block.settings.col4_text2}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% elsif block.settings.layout4 == "full_width_img" %}
+                                <a href="{{block.settings.col4_link3}}" class="mm__link">
+                                    <div class="mm__ful-width-img">
+                                        <img src="{{block.settings.col4_full_img | img_url: '300x'}}" alt="{{block.settings.col4_full_img.alt}}">
+                                    </div>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+
+    const handleHoverOver = (item) => {
+        item.classList.toggle("show-childrens");
+    }
+
+</script>
+
+
+{% schema %}
+    {
+        "name": "Mega Menu",
+        "presets": [
+            {
+                "name": "Mega Menu"
+            }
+        ],
+        "class": "mega-menu__section",
+        "blocks": [
+            {
+                "type": "menu_item",
+                "name": "Menu Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "menu_img",
+                        "label": "Menu Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "menu_title",
+                        "label": "Menu Title",
+                        "default": "Ihr Business"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "isMegamenu",
+                        "label": "Enable Megamenu",
+                        "default": true
+                    },
+                    {
+                        "type": "url",
+                        "id": "single_link",
+                        "label": "Link"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Column 1"
+                    },
+                    {
+                        "type": "select",
+                        "id": "layout1",
+                        "label": "Column Layout",
+                        "options": [
+                            {
+                            "value": "img_text",
+                            "label": "1 Image"
+                            },
+                            {
+                            "value": "img_text1",
+                            "label": "2 Images"
+                            },
+                            {
+                            "value": "full_width_img",
+                            "label": "Full Width Image"
+                            }
+                        ],
+                        "default": "img_text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col1_link1",
+                        "label": "Link 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col1_text1",
+                        "label": "Text 1",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col1_image1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col1_link2",
+                        "label": "Link 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col1_text2",
+                        "label": "Text 2",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col1_image2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col1_link3",
+                        "label": "Link 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col1_full_img",
+                        "label": "Full Width Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Column 2"
+                    },
+                    {
+                        "type": "select",
+                        "id": "layout2",
+                        "label": "Column Layout 2",
+                        "options": [
+                            {
+                            "value": "img_text",
+                            "label": "1 Image"
+                            },
+                            {
+                            "value": "img_text1",
+                            "label": "2 Images"
+                            },
+                            {
+                            "value": "full_width_img",
+                            "label": "Full Width Image"
+                            }
+                        ],
+                        "default": "img_text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col2_link1",
+                        "label": "Link 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col2_text1",
+                        "label": "Text 1",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col2_image1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col2_link2",
+                        "label": "Link 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col2_text2",
+                        "label": "Text 2",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col2_image2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col2_link3",
+                        "label": "Link 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col2_full_img",
+                        "label": "Full Width Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Column 3"
+                    },
+                    {
+                        "type": "select",
+                        "id": "layout3",
+                        "label": "Column Layout 3",
+                        "options": [
+                            {
+                            "value": "img_text",
+                            "label": "1 Image"
+                            },
+                            {
+                            "value": "img_text1",
+                            "label": "2 Images"
+                            },
+                            {
+                            "value": "full_width_img",
+                            "label": "Full Width Image"
+                            }
+                        ],
+                        "default": "img_text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col3_link1",
+                        "label": "Link 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col3_text1",
+                        "label": "Text 1",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col3_image1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col3_link2",
+                        "label": "Link 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col3_text2",
+                        "label": "Text 2",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col3_image2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col3_link3",
+                        "label": "Link 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col3_full_img",
+                        "label": "Full Width Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Column 4"
+                    },
+                    {
+                        "type": "select",
+                        "id": "layout4",
+                        "label": "Column Layout 4",
+                        "options": [
+                            {
+                            "value": "img_text",
+                            "label": "1 Image"
+                            },
+                            {
+                            "value": "img_text1",
+                            "label": "2 Images"
+                            },
+                            {
+                            "value": "full_width_img",
+                            "label": "Full Width Image"
+                            }
+                        ],
+                        "default": "img_text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col4_link1",
+                        "label": "Link 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col4_text1",
+                        "label": "Text 1",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col4_image1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col4_link2",
+                        "label": "Link 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col4_text2",
+                        "label": "Text 2",
+                        "default": "Buro"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col4_image2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "col4_link3",
+                        "label": "Link 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "col4_full_img",
+                        "label": "Full Width Image"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}

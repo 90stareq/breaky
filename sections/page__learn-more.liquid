@@ -1,0 +1,158 @@
+<div class="page-width{% if section.settings.full-width %}-full-width{% endif %}">
+    <div class="learn__inner">
+        <div class="learn__title section__title">
+            {{ section.settings.title }}
+        </div>
+
+        <div class="height100"></div>
+        <div class="learn__items">
+            <div class="learn__left">
+                <a href="{{ section.settings.btn_link_left }}" class="learn__item">
+                    <div class="learn__item__img">
+                        <img src="{{ section.settings.img_left | img_url: '500x' }}" alt="{{ section.settings.img_left.alt }}">
+
+                        <div class="learn__item_texts">
+                            <div class="learn__item__title">
+                                {{ section.settings.text_left }}
+                            </div>
+                            <div 
+                                style="
+                                        {% if section.settings.btn_color != blank %}color:{{section.settings.btn_color}};{% endif %}{% if section.settings.btn_bgcolor != blank %}background:{{section.settings.btn_bgcolor}};{% endif %}
+                                        "
+                                class="learn__item__link">
+                                {{ section.settings.btn_text }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="learn__right">
+                <div class="learn__right1">
+                    <a href="{{ section.settings.btn_link_right1 }}" class="learn__item">
+                        <div class="learn__item__img">
+                            <img src="{{ section.settings.img_right1 | img_url: '500x' }}" alt="{{ section.settings.img_right1.alt }}">
+                        
+    
+                            <div class="learn__item_texts">
+                                <div class="learn__item__title">
+                                    {{ section.settings.text_right1 }}
+                                </div>
+                                <div 
+                                    style="
+                                            {% if section.settings.btn_color != blank %}color:{{section.settings.btn_color}};{% endif %}{% if section.settings.btn_bgcolor != blank %}background:{{section.settings.btn_bgcolor}};{% endif %}
+                                            "
+                                    class="learn__item__link">
+                                    {{ section.settings.btn_text }}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="learn__right2">
+                    <a href="{{ section.settings.btn_link_right2 }}" class="learn__item">
+                        <div class="learn__item__img">
+                            <img src="{{ section.settings.img_right2 | img_url: '500x' }}" alt="{{ section.settings.img_right2.alt }}">
+
+                            <div class="learn__item_texts">
+                                <div class="learn__item__title">
+                                    {{ section.settings.text_right2 }}
+                                </div>
+                                <div 
+                                    style="
+                                            {% if section.settings.btn_color != blank %}color:{{section.settings.btn_color}};{% endif %}{% if section.settings.btn_bgcolor != blank %}background:{{section.settings.btn_bgcolor}};{% endif %}
+                                            "
+                                    class="learn__item__link">
+                                    {{ section.settings.btn_text }}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Learn More",
+        "presets": [
+            {
+                "name": "Learn More"
+            }
+        ],
+        "class": "learn__section p100",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "full-width",
+                "label": "Full Width",
+                "default": false
+            },
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_left",
+                "label": "Left Image"
+            },
+            {
+                "type": "text",
+                "id": "text_left",
+                "label": "Text Left"
+            },
+            {
+                "type": "url",
+                "id": "btn_link_left",
+                "label": "Left Button Link"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_right1",
+                "label": "Right Image 1"
+            },
+            {
+                "type": "text",
+                "id": "text_right1",
+                "label": "Text Right 1"
+            },
+            {
+                "type": "url",
+                "id": "btn_link_right1",
+                "label": "Right Button Link 1"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_right2",
+                "label": "Right Image 2"
+            },
+            {
+                "type": "text",
+                "id": "text_right2",
+                "label": "Text Right 2"
+            },
+            {
+                "type": "url",
+                "id": "btn_link_right2",
+                "label": "Right Button Link 2"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Text",
+                "default": "Learn more"
+            },
+            {
+                "type": "color",
+                "id": "btn_color",
+                "label": "Button Text Color"
+            }
+        ]
+    }
+{% endschema %}

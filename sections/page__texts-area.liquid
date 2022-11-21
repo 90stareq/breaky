@@ -1,0 +1,64 @@
+<div class="page-width">
+    <div class="texts-area__inner">
+        {% for block in section.blocks %}
+            <div class="texts-area__item">
+                <div class="texts-area__item__title">
+                    {{ block.settings.title }}
+                </div>
+
+                <div class="texts-area__item__text">
+                    {{ block.settings.text }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Text Area",
+        "presets": [
+            {
+                "name": "Text Area"
+            }
+        ],
+        "class": "texts-area__section",
+        "blocks": [
+            {
+                "type": "texts",
+                "name": "Texts",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ],
+        "settings": [
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "Background Color"
+            }
+        ]
+        
+    }
+{% endschema %}
+
+
+<style>
+
+    {% if section.settings.bg_color != blank %}
+        .texts-area__section {
+            background: {{section.settings.bg_color}};
+        }
+    {% endif %}
+
+</style>

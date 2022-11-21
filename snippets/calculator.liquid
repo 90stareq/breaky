@@ -1,0 +1,356 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="calc">
+  
+    <div class="calc__inner">
+      <div class="calc__left">
+        <div class="calc__title">
+          Parameter
+        </div>
+        <div class="single-row">
+            <div class="milk__txt">
+                With milk or without milk?
+            </div>
+            <label class="switch">
+                <input class="milkvalue" type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+        </div>
+        <div class="single-row">
+          <div class="milk__txt">
+              Package
+          </div>
+          <div class="calc__select-items">
+            <span class="calc__icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <select class="cal__pcakages" name="cal__pcakages">
+                <option value="standard" selected>Standard Package</option>
+                <option value="full">Full Package</option>
+            </select>
+          </div>
+        </div>
+        <div class="single-row">
+            <div class="milk__txt">
+                Portions/Day
+            </div>
+            <div class="calc__select-items">
+              <span class="calc__icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <select class="calc__portions" name="calc__portions">
+                  <option value="5" selected>from 5 to 9</option>
+                  <option value="10">from 10 to 14</option>
+                  <option value="15">from 15 to 19</option>
+                  <option value="20">from 20 to 24</option>
+                  <option value="25">from 25 to 30</option>
+                  <option value="30">from 30</option>
+              </select>
+            </div>
+        </div>
+      </div>
+      <div class="calc__right">
+        <div class="calc__title">
+          Costs
+        </div>
+
+        <div class="calc__right__inner">
+          <div class="calc__prices">
+            <div class="calc__price">
+              CHF <span class="calc_price-amnt">00</span>
+            </div>
+            Price per cofee
+          </div>
+
+          <div class="calc__btn">
+            <button onclick="handleBtnClick()">Request a offer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+
+      const data = [
+        {
+          type: "milk",
+          package : [
+            {
+              name: "full",
+              values: [
+                {
+                  from: 5,
+                  value: 1.63,
+                },
+                {
+                  from: 10,
+                  value: 0.97,
+                },
+                {
+                  from: 15,
+                  value: 0.75,
+                },
+                {
+                  from: 20,
+                  value: 0.64,
+                },
+                {
+                  from: 25,
+                  value: 0.59,
+                },
+                {
+                  from: 30,
+                  value: 0.54,
+                },
+              ],
+            },
+            {
+              name: "standard",
+              values: [
+                {
+                  from: 5,
+                  value: 1.53,
+                },
+                {
+                  from: 10,
+                  value: 0.87,
+                },
+                {
+                  from: 15,
+                  value: 0.65,
+                },
+                {
+                  from: 20,
+                  value: 0.54,
+                },
+                {
+                  from: 25,
+                  value: 0.49,
+                },
+                {
+                  from: 30,
+                  value: 0.44,
+                },
+              ],
+            },
+          ]
+        },
+        {
+          type: "regular",
+            package : [
+              {
+                name: "full",
+                values: [
+                  {
+                    from: 5,
+                    value: 1.41,
+                  },
+                  {
+                    from: 10,
+                    value: 0.89,
+                  },
+                  {
+                    from: 15,
+                    value: 0.72,
+                  },
+                  {
+                    from: 20,
+                    value: 0.6,
+                  },
+                  {
+                    from: 25,
+                    value: 0.56,
+                  },
+                  {
+                    from: 30,
+                    value: 0.52,
+                  },
+                ],
+              },
+              {
+                name: "standard",
+                values: [
+                  {
+                    from: 5,
+                    value: 1.31,
+                  },
+                  {
+                    from: 10,
+                    value: 0.79,
+                  },
+                  {
+                    from: 15,
+                    value: 0.62,
+                  },
+                  {
+                    from: 20,
+                    value: 0.5,
+                  },
+                  {
+                    from: 25,
+                    value: 0.46,
+                  },
+                  {
+                    from: 30,
+                    value: 0.42,
+                  },
+                ],
+              },
+            ]
+        }
+      ];
+
+      let priceToShow = 0;
+
+      //Selecting from input
+      let formPackage = document.getElementById("contactForpackage");
+      let formPortion = document.getElementById("contactForportions");
+      let formMessage = document.getElementById("contactFormMessage");
+
+
+
+      //Selecting data
+      let milk = document.querySelector(".milkvalue");
+      let package = document.querySelector(".cal__pcakages");
+      let portion = document.querySelector(".calc__portions");
+      let ptShow = document.querySelector(".calc_price-amnt");
+      let msgShow = "CHF "+document.querySelector(".calc_price-amnt").innerText+ "price per cofee";
+
+      //Data values
+      let milkValue = milk.checked;
+      let packageValue = package.value;
+      let portionValue = portion.value;
+
+      //Setting form values
+      const setFormValues = (pkg,por) => {
+        formPackage.value = pkg;
+        formPortion.value = por;
+        formMessage.value = "CHF "+document.querySelector(".calc_price-amnt").innerText+ " price per cofee";
+      }
+      //Finding selected data
+      const selectedData = (milk,package,portion) => {
+        if(milk) {
+          data[0].package.map(p => {
+            if( p.name == package ) {
+              p.values.map(item =>{
+                if(item.from == portion) {
+                  console.log("hello");
+                  priceToShow = item.value;
+                  ptShow.innerHTML = priceToShow;
+                  setFormValues (packageValue,portionValue);
+                }
+              })
+            }
+          })
+        } else {
+          data[1].package.map(p => {
+            if( p.name == package ) {
+              p.values.map(item =>{
+                if(item.from == portion) {
+                  console.log("hello2");
+                  priceToShow = item.value;
+                  ptShow.innerHTML = priceToShow;
+                  setFormValues (packageValue,portionValue);
+                }
+              })
+            }
+          })
+        }
+      };
+
+      //Handle milk change
+      milk.addEventListener('change', (event) => {
+        milkValue = event.currentTarget.checked;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+      //Handle package change
+      package.addEventListener('change', (event) => {
+        packageValue = event.currentTarget.value;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+
+      //Handle portion change
+      portion.addEventListener('change', (event) => {
+        portionValue = event.currentTarget.value;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+      selectedData(milkValue,packageValue,portionValue);
+
+
+      const handleBtnClick = () => {
+        document.querySelector("body").classList.add("show-cstm-cnt");
+      }
+      const handleClose = () => {
+        document.querySelector("body").classList.remove("show-cstm-cnt");
+      }
+
+
+</script>
+
+<style>
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 25px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+  }
+    
+    input:checked + .slider {
+      background-color: #96c126;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+  </style>

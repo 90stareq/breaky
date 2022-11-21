@@ -1,0 +1,494 @@
+{
+  "sections": {
+    "164729055514fc2b50": {
+      "type": "image-banner",
+      "blocks": {
+        "16472905555d922f25-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Die ideale Kaffeemaschine für Dein Büro",
+            "heading_size": "h1"
+          }
+        },
+        "16472905555d922f25-1": {
+          "type": "text",
+          "settings": {
+            "text": "Das \"We Proudly Serve Starbucks® Coffee\"-Programm ist die ideale Lösung für Kaffee am Arbeitsplatz - sei es im Büro, in der Kantine oder im Pausenraum. Verwöhne Deine Angestellten und Kunden mit dem beliebten Kaffee von Starbucks und den besten Kaffeevollautomaten.",
+            "text_style": "subtitle"
+          }
+        },
+        "16472905555d922f25-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16472905555d922f25-0",
+        "16472905555d922f25-1",
+        "16472905555d922f25-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Neues_Projekt_12.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "page__professional",
+      "disabled": true,
+      "settings": {}
+    },
+    "1647879221d779017b": {
+      "type": "page__business-solution",
+      "disabled": true,
+      "blocks": {
+        "185fed81-af7c-48a1-99a4-a2e64fb644e6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fruechtebox_-_v2_-_SCHWARZ_4.jpg",
+            "title": "Büro",
+            "text": "Nur das Beste für dein Arbeitsumfeld",
+            "text2": "Einen Kaffee anzubieten ist eine alltägliche Geste. Aber mit einer perfekten Kaffeezubereitung drückst du deine ganze Wertschätzung für deine Kunden, Mitarbeiter und Geschäftspartner aus. Dann enthält die alltägliche Geste eine Botschaft: Dein Unternehmen weiß Qualität zu schätzen.",
+            "image_icon1": "shopify:\/\/shop_images\/coffee-beans_3_1.png",
+            "text_icon1": "Verwöhne deine Kunden den ganzen Tag über mit ihrem täglichen Lieblingskaffee von Starbucks®.",
+            "image_icon2": "shopify:\/\/shop_images\/coffee-cup_2_1.png",
+            "text_icon2": "Professionelle Schweizer Kaffeemaschine, die genau auf deine geschäftlichen Bedürfnisse zugeschnitten ist.",
+            "image_icon3": "shopify:\/\/shop_images\/beans_4_1.png",
+            "text_icon3": "Vertrauenswürdige und effiziente Lösungen.",
+            "btn_text": "",
+            "btn_link": "",
+            "btn_color": "",
+            "btn_bgcolor": ""
+          }
+        },
+        "1c98b2ca-e497-44f4-8de6-03a447aabf7f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roberto-nickson-TB_cvdUHUuc-unsplash.jpg",
+            "title": "",
+            "text": "",
+            "text2": "",
+            "text_icon1": "",
+            "text_icon2": "",
+            "text_icon3": "",
+            "btn_text": "Button",
+            "btn_link": "",
+            "btn_color": "",
+            "btn_bgcolor": ""
+          }
+        }
+      },
+      "block_order": [
+        "185fed81-af7c-48a1-99a4-a2e64fb644e6",
+        "1c98b2ca-e497-44f4-8de6-03a447aabf7f"
+      ],
+      "settings": {
+        "full-width": true,
+        "title": "CUSTOMIZED LÖSUNGEN FÜR DEIN UNTERNEHMEN",
+        "text": "<p>Unsere <strong>Small Office Starbucks Solution<\/strong> bietet Kaffeelösungen,<br\/>die speziell auf die Bedürfnisse deines Unternehmens zugeschnitten sind.<br\/>Entdecke unsere Business Solutions, um mehr zu erfahren.<\/p>",
+        "bg_img": "shopify:\/\/shop_images\/coffee-in-plants_5_1.jpg"
+      }
+    },
+    "16472947362e9cd31a": {
+      "type": "page__text-between",
+      "blocks": {
+        "abd48d54-13e7-4d86-872a-20e216df5cff": {
+          "type": "item",
+          "settings": {
+            "image_icon": "shopify:\/\/shop_images\/coffee-beans_1.png",
+            "text_icon": "Der beste Kaffee für Angestellte und Kunden"
+          }
+        },
+        "7caa5123-576b-4051-8264-b60729c18cc9": {
+          "type": "item",
+          "settings": {
+            "image_icon": "shopify:\/\/shop_images\/beans_3_1.png",
+            "text_icon": "Verschiedene Kaffeevariationen zum Geniessen"
+          }
+        },
+        "49dcae5f-9bf8-4f43-89ae-469254a1d5f6": {
+          "type": "item",
+          "settings": {
+            "image_icon": "shopify:\/\/shop_images\/coffee-cup_1_1.png",
+            "text_icon": "Einfache Handhabung & einzigartiger Service"
+          }
+        }
+      },
+      "block_order": [
+        "abd48d54-13e7-4d86-872a-20e216df5cff",
+        "7caa5123-576b-4051-8264-b60729c18cc9",
+        "49dcae5f-9bf8-4f43-89ae-469254a1d5f6"
+      ],
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/custom_resized_77c0caec-2b9e-4749-ab33-df5a3241bd5c.png",
+        "image2": "shopify:\/\/shop_images\/big_we8_v19_dark_inox_2.png",
+        "title": "KAFFEE AUTOMATEN FÜR DEIN BÜRO",
+        "text": "Eine Komplett-Lösung, auf die individuellen Bedürfnisse von Unternehmen zugeschnitten - im für Dich passenden Abo. Das \"We Proudly Serve Starbucks® Coffee\"-Programm bietet ein praktisches und erfrischendes Erlebnis für Heissgetränke im Büro, welches bei Konsumenten auf der ganzen Welt bekannt und beliebt ist.",
+        "btn_text": "Jetzt Kaffee-Lösung Anfragen",
+        "btn_link": "",
+        "btn_color": "#ffffff",
+        "btn_bgcolor": "#95c11f",
+        "title_color": "#ffffff",
+        "text_color": ""
+      }
+    },
+    "164729709760f50fb3": {
+      "type": "page__text-img",
+      "settings": {
+        "color": "",
+        "title_color": "",
+        "text_align": "left",
+        "bg_img": "shopify:\/\/shop_images\/Office_Coffee_introduction_Section_L_3da19625-1191-46bf-b087-1144362c3cd2.jpg",
+        "title": "DAS BESTE KAFFEE-ERLEBNIS FÜR DEIN BÜRO",
+        "sub_title": "Bestelle das neue STARBUCKS Paket von Breaky.ch jetzt für dein Büro. Bereits ab 15 Mitarbeitenden inklusive kostenlosem Zubehör!*",
+        "text": "<p><br\/>Wenn du <strong>Starbucks<\/strong> Kaffee am Arbeitsplatz anbietest, vermittelst Du deinen Mitarbeitenden nicht nur Wertschätzung und Anerkennung, sondern hinterlässt auch einen positiven Eindruck bei Deinen Kunden und Geschäftspartnern. <br\/><br\/><\/p><p>Bestelle jetzt bis 30. Juni 2022 vor und profitiere von einem <strong>kostenlosen Cup holder, kostenlosen Tassen (8 Espressotassen und 8 Short Tassen), einem Siruphalter, drei verschiedene Sirupsorten<\/strong> und vielem mehr. <br\/><\/p>",
+        "text2": "<p><br\/>*Die Anfrage ist keine Bestätigung, sondern muss erst von Starbucks genehmigt werden. <\/p>",
+        "acc_title": "",
+        "acc_text": ""
+      }
+    },
+    "16473496652563428d": {
+      "type": "page__expandable",
+      "blocks": {
+        "42a2fb86-2a4c-4a74-98ea-106a16bb8e36": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "percent": 0,
+            "text": "<p>unserer Kunden sind der Meinung, dass für Unternehmen, die<strong>Nespresso<\/strong>Kaffee anbieten, ein positives Image entsteht.*<\/p>"
+          }
+        },
+        "59a8fde6-7891-4fcb-b4fd-b390cb32a060": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "percent": 83,
+            "text": "<p>sind der Ansicht, dass einem Unternehmen, das<strong>Nespresso<\/strong>Kaffee anbietet, das Wohl seiner Kunden wichtig ist.*<\/p>"
+          }
+        },
+        "73b9232b-d836-4bb2-8ef6-7a9be2b787a6": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "percent": 82,
+            "text": "<p>sind der Ansicht, dass ein Unternehmen, das<strong>Nespresso<\/strong>Kaffee anbietet, modern ist.*<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "42a2fb86-2a4c-4a74-98ea-106a16bb8e36",
+        "59a8fde6-7891-4fcb-b4fd-b390cb32a060",
+        "73b9232b-d836-4bb2-8ef6-7a9be2b787a6"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/Office_Quote_Satisfaction_L_1.jpg",
+        "img_icon": "shopify:\/\/shop_images\/New_Text_Document_52f0b707-5075-40f5-a7cd-5659a43571c7.png",
+        "title": "Engagement für Nachhaltigkeit",
+        "ex-btn_text": "Weiterlesen",
+        "ex_title": "Starbucks engagiert sich für eine nachhaltige Zukunft unter ganzheitlichen Gesichtspunkten. Umweltschutz, Klimaschutz und soziale Verantwortung zeichnen unser Engagement aus.",
+        "ex_text": "<p><strong>Starbucks<\/strong> ist ein globales Unternehmen und hat damit einen beträchtlichen Einfluss auf die Umwelt. Deshalb hat Starbucks das ehrgeizige Ziel, ein ressourcenschonendes Unternehmen zu sein, weniger zu verbrauchen und dem Planeten in jedem Aspekt seines Geschäfts mehr zu geben - auch beim Kaffee. Starbucks kauft Kaffee von mehr als 400.000 Bauern in 30 Ländern auf der ganzen Welt und setzt sich für eine nachhaltige Zukunft des Kaffees ein.<br\/><br\/>Um die Widerstandsfähigkeit der Lieferkette, die Menschen, die sie ermöglichen, und den Planeten, den wir alle teilen, zu schützen, hat sich Starbucks das Ziel gesetzt, bis 2030 kohlenstoffneutralen Rohkaffee zu produzieren und den Wasserverbrauch bei der Verarbeitung von Rohkaffee um 50% zu senken.<br\/><br\/><\/p>",
+        "ex_text2": "",
+        "ex_source": ""
+      }
+    },
+    "16473704365e78a49c": {
+      "type": "page__slider",
+      "blocks": {
+        "90b0a996-0bf1-493e-a017-9d90d7dc9ebc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_0adead6c-993f-4340-b240-81a50ccd8f6e.jpg",
+            "title": "Espresso",
+            "text": "",
+            "link": ""
+          }
+        },
+        "b0cef040-136f-4e63-a668-dd5155764386": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_1.jpg",
+            "title": "Americano",
+            "text": "",
+            "link": ""
+          }
+        },
+        "d915680b-df9b-415c-b74f-0928902e6374": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_4.jpg",
+            "title": "Espresso Macchiato",
+            "text": "",
+            "link": ""
+          }
+        },
+        "c04635b6-bbb9-4313-8b52-eed9db779856": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_3.jpg",
+            "title": "Flat White",
+            "text": "",
+            "link": ""
+          }
+        },
+        "472556e9-1e4d-4edb-9aac-a02b74a8aeb8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_2.jpg",
+            "title": "Cappuccino",
+            "text": "",
+            "link": ""
+          }
+        },
+        "359c444d-df29-4023-8bc4-2155f91b6474": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beans_300x_6.jpg",
+            "title": "Latte Macchiato",
+            "text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "90b0a996-0bf1-493e-a017-9d90d7dc9ebc",
+        "b0cef040-136f-4e63-a668-dd5155764386",
+        "d915680b-df9b-415c-b74f-0928902e6374",
+        "c04635b6-bbb9-4313-8b52-eed9db779856",
+        "472556e9-1e4d-4edb-9aac-a02b74a8aeb8",
+        "359c444d-df29-4023-8bc4-2155f91b6474"
+      ],
+      "settings": {
+        "color": "#ffffff",
+        "title": "Unser Kernsortiment an Getränken und den kultigen Starbucks®-Favoriten"
+      }
+    },
+    "1647372370bca688bf": {
+      "type": "page__text-img",
+      "settings": {
+        "color": "",
+        "title_color": "",
+        "text_align": "right",
+        "bg_img": "shopify:\/\/shop_images\/Office_Momento_Machine_introduction_section_L_1.jpg",
+        "title": "THERMOPLAN + STARBUCKS",
+        "sub_title": "DIE ORIGINAL SCHWEIZER KAFFEEVOLLAUTOMATEN AUF DEIN UNTERNEHMEN ZUGESCHNITTEN",
+        "text": "<p><br\/>Unsere Experten führen zunächst eine detaillierte Bewertung deiner kaffeespezifischen Anforderungen durch. Auf dieser Grundlage empfehlen sie die am besten geeignete Starbucks-Lösung für Deine Räumlichkeiten - egal, ob es sich um einen Arbeitsplatz, eine Agentur, eine Lounge, Self-Check-in-Hotels, einen Pausenraum oder einen Konferenzraum handelt.<br\/><br\/>So können Espresso, Cappuccino oder andere leckere Starbucks Kaffeegetränke jederzeit schnell und einfach per Knopfdruck zubereitet werden.<\/p>",
+        "text2": "",
+        "acc_title": "Erfahre hier mehr über Thermoplan",
+        "acc_text": ""
+      }
+    },
+    "16473737456d93b48d": {
+      "type": "image-banner",
+      "blocks": {
+        "16473737455673cc59-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COFFEE TASTING",
+            "heading_size": "h1"
+          }
+        },
+        "16473737455673cc59-1": {
+          "type": "text",
+          "settings": {
+            "text": "Möchtest Du unseren Kaffee probieren und in einem unverbindlichen Beratungsgespräch mehr über Starbucks Small Office Solution erfahren? Wir freuen uns auf Deine Anfrage für eine Kaffeeverkostung für Dich und Dein Büro.",
+            "text_style": "subtitle"
+          }
+        },
+        "16473737455673cc59-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "JETZT KAFFEE TESTEN",
+            "button_link_1": "shopify:\/\/pages\/blog-widgets-1",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16473737455673cc59-0",
+        "16473737455673cc59-1",
+        "16473737455673cc59-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/custom_resized_5e36d96a-8788-4961-976c-00bc96581cd3.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16473745078d63c71e": {
+      "type": "page__services",
+      "blocks": {
+        "298494c8-2755-44b5-8a1f-be4733455bd6": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dhtty.png",
+            "title": "Entsorgung",
+            "text": "Um Abfall zu vermeiden, haben wir die idealen Recycling-Lösungen"
+          }
+        },
+        "330c8f9d-2bd4-41a4-a516-388404a0ab96": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "title": "Lieferung",
+            "text": "Wir liefern unsere Produkte schnell und effizient"
+          }
+        },
+        "0702e2b1-79dc-43a4-a044-bab2ea05facd": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Text_Document.png",
+            "title": "Service",
+            "text": "Für die beste Qualität ist unser Service-Team täglich für Dich unterwegs"
+          }
+        },
+        "15186bd0-5671-4b75-a5b1-3a8823a5efba": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/serwer.png",
+            "title": "Produkte",
+            "text": "Unsere Maschinen bieten eine grosse Auswahl an Heissgetränken."
+          }
+        }
+      },
+      "block_order": [
+        "298494c8-2755-44b5-8a1f-be4733455bd6",
+        "330c8f9d-2bd4-41a4-a516-388404a0ab96",
+        "0702e2b1-79dc-43a4-a044-bab2ea05facd",
+        "15186bd0-5671-4b75-a5b1-3a8823a5efba"
+      ],
+      "settings": {
+        "title": "<p>SERVICES<br\/><br\/><\/p>",
+        "sub_title": "MIT UNSEREM KAFFEE-ABO BIST DU AUF DER SICHEREN SEITE",
+        "text": "<p><br\/>Wenn Du ein Unternehmen führst, ist Zeit eine wertvolle Ressource. Du brauchst zuverlässige technische Unterstützung und massgeschneiderte Services, damit Du dich auf dein Geschäft konzentrieren kannst.<\/p>",
+        "text2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_color": "#8f7247",
+        "btn_bgcolor": "",
+        "bg_img": "shopify:\/\/shop_images\/Large-005tych-selecta-strbcks-WPS_Logo_20181101_website_approved_image_Feb_2021_1.jpg"
+      }
+    },
+    "16473751559df08f18": {
+      "type": "page__text-img",
+      "disabled": true,
+      "settings": {
+        "color": "#fcfcfc",
+        "title_color": "#fcfcfc",
+        "text_align": "right",
+        "bg_img": "shopify:\/\/shop_images\/Office_Sustainbility_section_L.jpg",
+        "title": "NACHHALTIGKEIT",
+        "sub_title": "UNSER NACHHALTIGKEITSPROGRAMM",
+        "text": "<p>Bei<strong>Nespresso<\/strong>sind wir der Überzeugung, dass jede Tasse Kaffee nicht nur Genussmomente bereitet, sondern auch Gutes für die Umwelt und das Gemeinwohl bewirken kann. Nachhaltige Qualität ist für<strong>Nespresso<\/strong>die treibende Kraft in allem, was wir tun, und der Grund, weshalb wir uns um positiven Konsum bemühen.<\/p>",
+        "text2": "",
+        "acc_title": "Accordion itemWeiterlesen",
+        "acc_text": "<p>Unsere Mission ist es, mit jeder Tasse Kaffee einen positiven Einfluss auf dieser Welt zu erzielen. Insbesondere verpflichtet sich <strong>Nespresso<\/strong> bis 2020 Folgendes zu erreichen:<\/p><p>Kaffee: 100% nachhaltig angebauter Kaffee<\/p><p><\/p><p>Kapseln: 100% nachhaltig genutztes Aluminium<\/p><p><\/p><p>Klima: 100% CO2-neutral<\/p>"
+      }
+    },
+    "164738069092c71cf7": {
+      "type": "page__texts-area",
+      "disabled": true,
+      "blocks": {
+        "40fb168b-d765-439e-b947-b70e875a46f5": {
+          "type": "texts",
+          "settings": {
+            "title": "Die perfekte Kaffeemaschine für Ihr Büro",
+            "text": "<p>Kaffee ist die wohl wichtigste Nebensache im Büro. Sowohl im Großraumbüro als auch im Coworking Space ist der Austausch untereinander in einer Kaffeepause wichtig. Das Büro ist nicht nur mit Arbeit verbunden. Auch die Zeit dazwischen, die Ihre Angestellten mit Ihren Kollegen verbringen, sollte einen kommunikativen Rahmen bekommen. Es wird in einer Kaffeepause nicht nur über Projekte, sondern auch über produktive und kommunikative Zusammenarbeit gesprochen. Den Mitarbeitern in Ihrem Büro liegt eine entspannte, kreative Atmosphäre in Ihrem Büro am Herzen und das Schlagwort<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/new-work\">„New Work“<\/a>wird immer mehr zum Thema. Die damit verbundenen Werte, wie Teilhabe, Freiheit und Selbstverwirklichung können durch den Arbeitgeber mit einer richtig guten Kaffeeauswahl und der zeitlichen und räumlichen Gelegenheit, diesen zu genießen, wie an einem Coffeepoint oder der Kaffeebar, gefördert werden.<\/p>"
+          }
+        },
+        "419e346e-9750-4acb-923d-020cec84699b": {
+          "type": "texts",
+          "settings": {
+            "title": "Coffeepoints einrichten für mehr Kaffeegenuss im Büro",
+            "text": "<p>Der<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/coffeepoint\">Coffeepoint<\/a>sollte für alle Mitarbeiter gut erreichbar und möglichst zentral gelegen sein. Bei beschränkten Platzverhältnissen bietet sich eine Kaffeebar an, wo man sich spontan treffen und sich über einen Espresso kurz austauschen kann.<br\/><br\/>Die Kaffeemaschine der Kaffeebar sollte gleichbleibend Kaffee in der besten Qualität liefern. Wartungsarme Modelle mit einfacher Bedienung haben sich dabei bewährt.<strong>Nespresso<\/strong>Kapselmaschinen erfüllen diese Ansprüche.<br\/><br\/>Welche Maschine ist nun die richtige fürs Büro?<br\/>Folgende wichtige Gedanken sollten Sie bei der Auswahl der Kaffeemaschine für Ihren Kaffeebereich oder die Kaffeeküche beachten:Wer hat Zugang? Mitarbeiter, Gäste und Kunden?Ist der Kaffee kostenfrei oder braucht die Kaffeemaschine ein Bezahlsystem?Ist die Größe der vorhandenen Stellfläche ausreichend, damit genug Platz für Accessoires da ist?Wieviele Tassen Kaffee werden voraussichtlich täglich konsumiert?Ist ein fester Wasseranschluss vorhanden?Wie komplex darf die Bedienung der Maschine sein?<br\/><strong>Nespresso<\/strong>Professional unterstützt Sie bei der Auswahl der passenden Kapselmaschine für alle Bürotypen und Anforderungen. Gemeinsam können wir die Zielsetzung für den zukünftigen Kaffeetreffpunkt genau definieren und Ihren künftigen Coffeepoint zum Lieblingsplatz - auch für Ihre Geschäftspartner und Kunden - werden lassen.<br\/><br\/>Schon gewusst? Unsere langjährige Expertise im Bereich der maßgeschneiderten Kaffeelösungen stellen wir Ihnen gerne während einer kostenlosen Degustation bei Ihnen vor.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "40fb168b-d765-439e-b947-b70e875a46f5",
+        "419e346e-9750-4acb-923d-020cec84699b"
+      ],
+      "settings": {
+        "bg_color": "#ebeced"
+      }
+    },
+    "1647933041e1df398a": {
+      "type": "rich-text",
+      "blocks": {
+        "1647933041a4e37723-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mach Dein Büro zu einem schmackhafteren Ort mit Starbucks",
+            "heading_size": "h1"
+          }
+        },
+        "1647933041a4e37723-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Erzähle uns ein wenig über Deine Bedürfnisse, Deinen Geschmack und Dein Team. Ein Mitarbeiter von Breaky Small Office Solution wird sich schnell mit Dir in Verbindung setzen. Er oder sie wird mit Dir zusammenarbeiten, um die besten Pläne für euren Kaffeegenuss zu entwickeln, damit Dein Team erfrischt, glücklich und produktiv bleibt.<\/p>"
+          }
+        },
+        "1647933041a4e37723-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "HOL DIR KAFFEEGENUSS INS BÜRO",
+            "button_link": "shopify:\/\/pages\/angebot-anfordern",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1647933041a4e37723-0",
+        "1647933041a4e37723-1",
+        "1647933041a4e37723-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "164729055514fc2b50",
+    "main",
+    "1647879221d779017b",
+    "16472947362e9cd31a",
+    "164729709760f50fb3",
+    "16473496652563428d",
+    "16473704365e78a49c",
+    "1647372370bca688bf",
+    "16473737456d93b48d",
+    "16473745078d63c71e",
+    "16473751559df08f18",
+    "164738069092c71cf7",
+    "1647933041e1df398a"
+  ]
+}

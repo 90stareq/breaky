@@ -1,0 +1,278 @@
+<div class="page-width">
+    <div class="container">
+        <div class="calculator__inner">
+            {% if section.settings.title != blank %}
+                <h2 class="calculator__title block-title">
+                    {{ section.settings.title }}
+                </h2>
+            {% endif %}
+
+            <div class="calculator__main">
+                {% render 'calculator2' calData:section.settings.calData section: section%}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Cofee Calculator",
+        "presets": [
+            {
+                "name": "Cofee Calculator"
+            }
+        ],
+        "class": "calculator__section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Cofee Calculator"
+            },
+            {
+                "type": "text",
+                "id": "slide_button_text",
+                "label": "Slide button text",
+                "default": "With milk or without milk?"
+            },
+            {
+                "type": "text",
+                "id": "package_text",
+                "label": "Package text",
+                "default": "Package"
+            },
+            {
+                "type": "text",
+                "id": "qnty_text",
+                "label": "Quantity text",
+                "default": "Anzahl Mitarbeiter"
+            },
+            {
+                "type": "text",
+                "id": "pricePerCofee",
+                "label": "Price Per Cofee",
+                "default": "Price Per Cofee"
+            },
+            {
+                "type": "text",
+                "id": "costs",
+                "label": "Costs",
+                "default": "Costs"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "label": "Submit button text",
+                "default": "Submit"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "milk",
+                "name": "mit Frischmilch",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "name",
+                        "label": "Name",
+                        "default": "full"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from1",
+                        "label": "ab 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value1",
+                        "label": "Value 1"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from2",
+                        "label": "ab 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value2",
+                        "label": "Value 2"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from3",
+                        "label": "ab 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value3",
+                        "label": "Value 3"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from4",
+                        "label": "ab 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value4",
+                        "label": "Value 4"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from5",
+                        "label": "ab 5"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value5",
+                        "label": "Value 5"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from6",
+                        "label": "ab 6"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value6",
+                        "label": "Value 6"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from7",
+                        "label": "ab 7"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value7",
+                        "label": "Value 7"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from8",
+                        "label": "ab 8"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value9",
+                        "label": "Value 9"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from10",
+                        "label": "ab 10"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value10",
+                        "label": "Value 10"
+                    }
+                ]
+            },
+            {
+                "type": "nomilk",
+                "name": "ohne Frischmilch",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "name",
+                        "label": "Name",
+                        "default": "full"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from1",
+                        "label": "ab 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value1",
+                        "label": "Value 1"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from2",
+                        "label": "ab 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value2",
+                        "label": "Value 2"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from3",
+                        "label": "ab 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value3",
+                        "label": "Value 3"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from4",
+                        "label": "ab 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value4",
+                        "label": "Value 4"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from5",
+                        "label": "ab 5"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value5",
+                        "label": "Value 5"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from6",
+                        "label": "ab 6"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value6",
+                        "label": "Value 6"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from7",
+                        "label": "ab 7"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value7",
+                        "label": "Value 7"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from8",
+                        "label": "ab 8"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value9",
+                        "label": "Value 9"
+                    },
+                    {
+                        "type": "number",
+                        "id": "from10",
+                        "label": "ab 10"
+                    },
+                    {
+                        "type": "text",
+                        "id": "value10",
+                        "label": "Value 10"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

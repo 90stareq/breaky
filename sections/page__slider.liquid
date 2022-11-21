@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="pslider__inner">
+    {% if section.settings.title != blank %}
+        <div class="page-width">
+            <div class="pslider__title section__title">
+                {{ section.settings.title }}
+            </div>
+        </div>
+            <div class="height100"></div>
+        {% endif %}
+
+        <div class="pslider__slide-content">
+            <div class="bsns-arrows">
+                <li class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </li>
+                <li class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+            </div>
+
+            <div class="pslider__items">
+                {% for block in section.blocks %}
+                    <div class="pslider__item">
+                        <a href="{{ block.settings.link }}">
+                            <div class="pslider__item__img">
+                                <img src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt }}">
+                            </div>
+
+                            <div class="pslider__item__content">
+                                <div class="pslider__item__title">
+                                    {{ block.settings.title }}
+                                </div>
+                                <div class="pslider__item__text">
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+{% schema %}
+    {
+        "name": "Slider",
+        "presets": [
+            {
+                "name": "Slider"
+            }
+        ],
+        "class": "slider__section p100",
+        "settings": [
+            {
+                "type": "color",
+                "id": "color",
+                "label": "Color"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link",
+                        "label": "Link"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+
+<style>
+
+    {% if section.settings.color != blank %}
+        .slider__section {
+            background: {{section.settings.color }};
+        }
+    {% endif %}
+
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+
+    $('.pslider__items').slick({
+        centerMode: true,
+        centerPadding: '260px',
+        slidesToShow: 3,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+
+</script>

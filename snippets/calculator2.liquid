@@ -1,0 +1,440 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="calc">
+  
+    <div class="calc__inner">
+      <div class="calc__left">
+        <div class="single-row">
+          {% if section.settings.slide_button_text != blank %}
+            <div class="milk__txt">
+              {{ section.settings.slide_button_text }}
+            </div>
+          {% endif %}
+            <label class="switch">
+                <input class="milkvalue" type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+
+        <div class="single-row">
+          <div class="milk__txt">
+            {{ section.settings.package_text }}
+          </div>
+          <div class="calc__select-items">
+            {% comment %} <span class="calc__icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span> {% endcomment %}
+            <select class="cal__pcakages" name="cal__pcakages">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'milk' %}
+                    <option value="{{block.settings.name}}">
+                      {{block.settings.name}} Package
+                    </option>
+                  {% endcase %}
+                {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div class="single-row">
+            <div class="milk__txt">
+              {{ section.settings.qnty_text }}
+            </div>
+            <div class="calc__select-items">
+              {% comment %} <span class="calc__icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span> {% endcomment %}
+              <select class="calc__portions" name="calc__portions">
+                {% for block in section.blocks limit: 1 %}
+                  {% case block.type %}
+                    {% when 'milk' %}
+                      {% if block.settings.from1 != blank %}
+                        <option value="{{block.settings.from1}}">
+                          ab {{ block.settings.from1 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from2 != blank %}
+                        <option value="{{block.settings.from2}}">
+                          ab {{ block.settings.from2 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from3 != blank %}
+                        <option value="{{block.settings.from3}}">
+                          ab {{ block.settings.from3 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from4 != blank %}
+                        <option value="{{block.settings.from4}}">
+                          ab {{ block.settings.from4 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from5 != blank %}
+                        <option value="{{block.settings.from5}}">
+                          ab {{ block.settings.from5 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from6 != blank %}
+                        <option value="{{block.settings.from6}}">
+                          ab {{ block.settings.from6 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from7 != blank %}
+                        <option value="{{block.settings.from7}}">
+                          ab {{ block.settings.from7 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from8 != blank %}
+                        <option value="{{block.settings.from8}}">
+                          ab {{ block.settings.from8 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from9 != blank %}
+                        <option value="{{block.settings.from9}}">
+                          ab {{ block.settings.from9 }}
+                        </option>
+                      {% endif %}
+                      {% if block.settings.from10 != blank %}
+                        <option value="{{block.settings.from10}}">
+                          ab {{ block.settings.from10 }}
+                        </option>
+                      {% endif %}
+                  {% endcase %}
+                {% endfor %}
+              </select>
+            </div>
+        </div>
+      </div>
+      <div class="calc__right">
+        <div class="calc__title">
+          {% if section.settings.costs != blank %}
+            {{ section.settings.costs }}
+          {% endif %}
+        </div>
+
+        <div class="calc__right__inner">
+          <div class="calc__prices">
+            <div class="calc__price">
+              CHF <span class="calc_price-amnt">00</span>
+            </div>
+            {% if section.settings.pricePerCofee != blank %}
+              {{ section.settings.pricePerCofee }}
+            {% endif %}
+          </div>
+
+          <div class="calc__btn">
+            <button class="btnn" onclick="handleBtnClick()">
+              {{ section.settings.sub_text }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+
+      const data2 = [
+        {
+          type: "milk",
+          package : [
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'milk' %}
+                  {
+                    name: "{{ block.settings.name }}",
+                    values: [
+                      {% if block.settings.from1 != blank and block.settings.value1 != blank %}
+                        {
+                          from: {{ block.settings.from1 }},
+                    		value: {{ block.settings.value1 | times: 1.00 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from2 != blank and block.settings.value2 != blank %}
+                        {
+                          from: {{ block.settings.from2 }},
+                          value: {{ block.settings.value2 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from3 != blank and block.settings.value3 != blank %}
+                        {
+                          from: {{ block.settings.from3 }},
+                          value: {{ block.settings.value3 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from4 != blank and block.settings.value4 != blank %}
+                        {
+                          from: {{ block.settings.from4 }},
+                          value: {{ block.settings.value4 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from5 != blank and block.settings.value5 != blank %}
+                        {
+                          from: {{ block.settings.from5 }},
+                          value: {{ block.settings.value5 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from6 != blank and block.settings.value6 != blank %}
+                        {
+                          from: {{ block.settings.from6 }},
+                          value: {{ block.settings.value6 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from7 != blank and block.settings.value7 != blank %}
+                        {
+                          from: {{ block.settings.from7 }},
+                          value: {{ block.settings.value7 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from8 != blank and block.settings.value8 != blank %}
+                        {
+                          from: {{ block.settings.from8 }},
+                          value: {{ block.settings.value8 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from9 != blank and block.settings.value9 != blank %}
+                        {
+                          from: {{ block.settings.from9 }},
+                          value: {{ block.settings.value9 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from10 != blank and block.settings.value10 != blank %}
+                        {
+                          from: {{ block.settings.from10 }},
+                          value: {{ block.settings.value10 }}
+                        },
+                      {% endif %}
+                    ]
+                  },
+              {% endcase %}
+            {% endfor %}
+          ]
+        },
+        {
+          type: "regular",
+          package : [
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'nomilk' %}
+                  {
+                    name: "{{ block.settings.name }}",
+                    values: [
+                      {% if block.settings.from1 != blank and block.settings.value1 != blank %}
+                        {
+                          from: {{ block.settings.from1 }},
+                          value: {{ block.settings.value1 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from2 != blank and block.settings.value2 != blank %}
+                        {
+                          from: {{ block.settings.from2 }},
+                          value: {{ block.settings.value2 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from3 != blank and block.settings.value3 != blank %}
+                        {
+                          from: {{ block.settings.from3 }},
+                          value: {{ block.settings.value3 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from4 != blank and block.settings.value4 != blank %}
+                        {
+                          from: {{ block.settings.from4 }},
+                          value: {{ block.settings.value4 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from5 != blank and block.settings.value5 != blank %}
+                        {
+                          from: {{ block.settings.from5 }},
+                          value: {{ block.settings.value5 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from6 != blank and block.settings.value6 != blank %}
+                        {
+                          from: {{ block.settings.from6 }},
+                          value: {{ block.settings.value6 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from7 != blank and block.settings.value7 != blank %}
+                        {
+                          from: {{ block.settings.from7 }},
+                          value: {{ block.settings.value7 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from8 != blank and block.settings.value8 != blank %}
+                        {
+                          from: {{ block.settings.from8 }},
+                          value: {{ block.settings.value8 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from9 != blank and block.settings.value9 != blank %}
+                        {
+                          from: {{ block.settings.from9 }},
+                          value: {{ block.settings.value9 }}
+                        },
+                      {% endif %}
+                      {% if block.settings.from10 != blank and block.settings.value10 != blank %}
+                        {
+                          from: {{ block.settings.from10 }},
+                          value: {{ block.settings.value10 }}
+                        },
+                      {% endif %}
+                    ]
+                  },
+              {% endcase %}
+            {% endfor %}
+          ]
+        }
+      ];
+
+      let priceToShow = 0;
+
+      //Selecting from input
+      let formPackage = document.getElementById("contactForpackage");
+      let formPortion = document.getElementById("contactForportions");
+      let formMessage = document.getElementById("contactFormMessage");
+
+
+
+      //Selecting data
+      let milk = document.querySelector(".milkvalue");
+      let package = document.querySelector(".cal__pcakages");
+      let portion = document.querySelector(".calc__portions");
+      let ptShow = document.querySelector(".calc_price-amnt");
+      let msgShow = "CHF "+document.querySelector(".calc_price-amnt").innerText+ " {{settings.form_msg_value}}";
+
+      //Data values
+      let milkValue = milk.checked;
+      let packageValue = package.value;
+      let portionValue = portion.value;
+
+      //Setting form values
+      const setFormValues = (pkg,por) => {
+        formPackage.value = pkg;
+        formPortion.value = por;
+        formMessage.value = "CHF "+document.querySelector(".calc_price-amnt").innerText+ " {{settings.form_msg_value}}";
+      }
+      //Finding selected data
+      const selectedData = (milk,package,portion) => {
+        if(milk) {
+          data2[0].package.map(p => {
+            if( p.name == package ) {
+              p.values.map(item =>{
+                if(item.from == portion) {
+                  priceToShow = item.value;
+                  ptShow.innerHTML = priceToShow.toFixed(2);
+                  setFormValues (packageValue,portionValue);
+                }
+              })
+            }
+          })
+        } else {
+          data2[1].package.map(p => {
+            if( p.name == package ) {
+              p.values.map(item =>{
+                if(item.from == portion) {
+                  priceToShow = item.value;
+                  ptShow.innerHTML = priceToShow.toFixed(2);
+                  setFormValues (packageValue,portionValue);
+                }
+              })
+            }
+          })
+        }
+      };
+
+      //Handle milk change
+      milk.addEventListener('change', (event) => {
+        milkValue = event.currentTarget.checked;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+      //Handle package change
+      package.addEventListener('change', (event) => {
+        packageValue = event.currentTarget.value;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+
+      //Handle portion change
+      portion.addEventListener('change', (event) => {
+        portionValue = event.currentTarget.value;
+        selectedData(milkValue,packageValue,portionValue);
+      });
+
+      selectedData(milkValue,packageValue,portionValue);
+
+
+      const handleBtnClick = () => {
+        document.querySelector("body").classList.add("show-cstm-cnt");
+      }
+      const handleClose = () => {
+        document.querySelector("body").classList.remove("show-cstm-cnt");
+      }
+
+
+</script>
+
+<style>
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 25px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #96c126;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+</style>

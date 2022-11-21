@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__contact-new",
+      "blocks": {
+        "78dcb6a1-60b3-4db7-8c59-55c430a0d8d4": {
+          "type": "check",
+          "settings": {
+            "checkbox": "Small Office Solutions",
+            "font_size": 20,
+            "sub-checkbox1": "Mit Starbucks Lösung",
+            "sub-checkbox2": "Mit Jura Lösung"
+          }
+        },
+        "8f3cc4c8-fc2f-43d3-b629-b5f81f224fd4": {
+          "type": "check",
+          "settings": {
+            "checkbox": "Starbucks Lösung",
+            "sub-checkbox1": "",
+            "sub-checkbox2": ""
+          }
+        },
+        "830aab26-126c-45eb-8e97-61d7da4fd6a5": {
+          "type": "check",
+          "settings": {
+            "checkbox": "Kaffee Lösungen",
+            "sub-checkbox1": "",
+            "sub-checkbox2": ""
+          }
+        },
+        "16a21c74-cd7f-4d9a-9ba2-54eeae7c9c7a": {
+          "type": "check",
+          "settings": {
+            "checkbox": "Früchtebox Lösungen",
+            "sub-checkbox1": "",
+            "sub-checkbox2": ""
+          }
+        },
+        "982958bb-5c74-48e2-96f1-6e13b263c96c": {
+          "type": "check",
+          "settings": {
+            "checkbox": "Snackbox Lösungen",
+            "sub-checkbox1": "",
+            "sub-checkbox2": ""
+          }
+        }
+      },
+      "block_order": [
+        "78dcb6a1-60b3-4db7-8c59-55c430a0d8d4",
+        "8f3cc4c8-fc2f-43d3-b629-b5f81f224fd4",
+        "830aab26-126c-45eb-8e97-61d7da4fd6a5",
+        "16a21c74-cd7f-4d9a-9ba2-54eeae7c9c7a",
+        "982958bb-5c74-48e2-96f1-6e13b263c96c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/custom_resized_1ce93484-c6e3-4191-a8de-a3dc21abbf84.jpg",
+        "step1": "Step 1 -   Wähle die Lösungen aus, an denen du interessiert bist:",
+        "step2": "Step 2 - Erzähl uns mehr über dein Team:",
+        "step3": "Step 3 - Wo können wir dich kontaktieren?"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

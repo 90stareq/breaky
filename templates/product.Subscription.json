@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "product__subscription",
+      "blocks": {
+        "ee10eb9f-277c-492a-8c39-c1e28354fe1c": {
+          "type": "title",
+          "settings": {}
+        },
+        "e8fdf76b-75bd-451a-8828-5fbdad7e57c2": {
+          "type": "price",
+          "settings": {}
+        },
+        "26c7674b-96a7-4ae9-b00a-917b98e4290c": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "0e908d86-b540-4feb-982f-41fb8542d8d8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "e1d17275-71b4-4103-8889-0b0511fafcbb": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "ee10eb9f-277c-492a-8c39-c1e28354fe1c",
+        "e8fdf76b-75bd-451a-8828-5fbdad7e57c2",
+        "26c7674b-96a7-4ae9-b00a-917b98e4290c",
+        "0e908d86-b540-4feb-982f-41fb8542d8d8",
+        "e1d17275-71b4-4103-8889-0b0511fafcbb"
+      ],
+      "settings": {
+        "frequency": "Every 1 week, Every 2 week, Every 3 week",
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1647810929024190e1": {
+      "type": "cofee_calculator",
+      "settings": {
+        "title": "Cofee Calculator",
+        "btn_text": "With milk or without milk?",
+        "calData": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1647810929024190e1"
+  ]
+}

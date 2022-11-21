@@ -1,0 +1,142 @@
+<div class="txt-between__inner">
+    <div class="txt-between__img">
+        <img src="{{ section.settings.image1 | img_url: '700x' }}" alt="{{ section.settings.image1.alt }}">
+    </div>
+    <div class="txt-between__texts">
+        <div 
+            style="
+                {% if section.settings.title_color != blank %}color:{{section.settings.title_color}};{% endif %}"
+            class="txt-between__title section__title">
+            {{ section.settings.title }}
+        </div>
+
+        <div 
+            style="
+                {% if section.settings.text_color != blank %}color:{{section.settings.text_color}};{% endif %}"
+            class="txt-between__text">
+            {{ section.settings.text }}
+        </div>
+
+
+
+        <div class="bsns__item__right_icons">
+            {% for block in section.blocks %}
+                <div class="bsns__item__right_icon">
+                    <div class="right-icon__image">
+                        <img src="{{ block.settings.image_icon | img_url: '300x' }}" alt="icon">
+                    </div>
+                    <div class="right-icon__text">
+                        {{ block.settings.text_icon }}
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+
+
+
+
+
+
+        <div class="txt-between__btn">
+            <div class="cfe-sol__top-box__item__btn">
+                <a 
+                    style="
+                {% if section.settings.btn_color != blank %}color:{{section.settings.btn_color}};{% endif %}{% if section.settings.btn_bgcolor != blank %}background:{{section.settings.btn_bgcolor}};{% endif %}
+                "
+                    href="{{ section.settings.btn_link }}">
+                    {{ section.settings.btn_text }}
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="txt-between__img">
+        <img src="{{ section.settings.image2 | img_url: '700x' }}" alt="{{ section.settings.image2.alt }}">
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Texts Between",
+        "presets": [
+            {
+                "name": "Texts Between"
+            }
+        ],
+        "class": "texts-between__section p100",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image1",
+                "label": "Image 1"
+            },
+            {
+                "type": "image_picker",
+                "id": "image2",
+                "label": "Image 2"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "textarea",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Text",
+                "default": "Button"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
+            },
+            {
+                "type": "color",
+                "id": "btn_color",
+                "label": "Button Text Color"
+            },
+            {
+                "type": "color",
+                "id": "btn_bgcolor",
+                "label": "Button Background Color"
+            },
+            {
+                "type": "color",
+                "id": "title_color",
+                "label": "Title Color"
+            },{
+                "type": "color",
+                "id": "text_color",
+                "label": "Text Color"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_icon",
+                        "label": "Image Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_icon",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}

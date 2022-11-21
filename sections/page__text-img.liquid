@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div 
+    style="
+    {% if section.settings.bg_img != blank %}
+            width: 100%;
+            position: relative;
+            background: url({{section.settings.bg_img | img_url: 'master'}});
+            background-size: cover;
+    {% endif %}
+    "
+    class="img-text2__cntnt">
+    <div class="page-width">
+        <div 
+            style="
+            {% if section.settings.color != blank %}color:{{ section.settings.color }};{% endif %}
+            "
+            class="img-text2__inner {% if section.settings.text_align == 'right' %}align-right{% endif %}">
+            {% if section.settings.title != blank %}
+                <div 
+                    style="
+                    {% if section.settings.title_color != blank %}color:{{ section.settings.title_color }};{% endif %}
+                    "
+                    class="img-text2__title section__title">
+                    {{ section.settings.title }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.sub_title != blank %}
+                <div class="img-text2__sub_title">
+                    {{ section.settings.sub_title }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.text != blank %}
+                <div class="img-text2__text">
+                    {{ section.settings.text }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.text2 != blank %}
+                <div class="img-text2__text2">
+                    {{ section.settings.text2 }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.acc_title != blank %}
+                <div class="acc__items">
+                    <div onclick="handleAccClick(this)" class="acc__item">
+                        <div class="acc__title">
+                            {{ section.settings.acc_title }}
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+
+                        <div class="acc__text">
+                            {{ section.settings.acc_text }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Image Text 2",
+        "presets": [
+            {
+                "name": "Image Text 2"
+            }
+        ],
+        "class": "img-text2__section",
+        "settings": [
+            {
+                "type": "color",
+                "id": "color",
+                "label": "Text Color"
+            },
+            {
+                "type": "color",
+                "id": "title_color",
+                "label": "Title Color"
+            },
+            {
+                "type": "select",
+                "id": "text_align",
+                "label": "Text Alignment",
+                "options": [
+                    {
+                    "value": "left",
+                    "label": "Left"
+                    },
+                    {
+                    "value": "right",
+                    "label": "Right"
+                    }
+                ],
+                "default": "left"
+            },
+            {
+                "type": "image_picker",
+                "id": "bg_img",
+                "label": "Background Image"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "sub_title",
+                "label": "Sub-Title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "richtext",
+                "id": "text2",
+                "label": "Text2"
+            },
+            {
+                "type": "text",
+                "id": "acc_title",
+                "label": "Accordion title"
+            },
+            {
+                "type": "richtext",
+                "id": "acc_text",
+                "label": "Accordion Text"
+            }
+        ]
+    }
+{% endschema %}
+
+
+{% comment %} <style>
+
+    {% if section.settings.bg_img != blank %}
+        .img-text2__section {
+            width: 100%;
+            position: relative;
+            background: url({{section.settings.bg_img | img_url: 'master'}});
+            background-size: cover;
+        }
+    {% endif %}
+
+</style> {% endcomment %}
+
+<script>
+
+    const handleAccClick = (data) => {
+        data.classList.add("anim");
+        setTimeout(()=>{
+            data.classList.remove("anim");
+        }, 200);
+        data.classList.toggle("active");
+    }
+
+</script>

@@ -1,0 +1,384 @@
+{
+  "sections": {
+    "main": {
+      "type": "slideshow",
+      "blocks": {
+        "7243aa6f-68c6-46f3-a9e3-6688c77a8821": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-in-plants.jpg",
+            "heading": "Massgeschneiderte Lösungen für dein Unternehmen",
+            "heading_size": "h0",
+            "subheading": "Breaky bietet Früchte-, Kaffee- & Snacklösungen an, die speziell auf die Bedürfnisse deines Unternehmens abgestimmt sind. Entdecken Sie unsere Business Lösungen, um mehr zu erfahren.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "7243aa6f-68c6-46f3-a9e3-6688c77a8821"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "164719721376c20468": {
+      "type": "page__cofee-solution",
+      "blocks": {
+        "ee7e8858-ba8e-4041-877d-c71a0281461a": {
+          "type": "floating-box",
+          "settings": {
+            "cstm_css2": "",
+            "title": "<p>Bester Kaffee in deiner Arbeitswelt<\/p>",
+            "text": "<p>Hebe dein Angebot mit unserem <strong>Starbucks®<\/strong> Kaffee-Programm.<br\/><br\/><\/p>",
+            "title_color": "",
+            "text_color": "",
+            "btn_text": "JETZT KUNDE WERDEN",
+            "btn_link": "",
+            "btn_color": "#ffffff",
+            "btn_bgcolor": "#95c11f"
+          }
+        },
+        "085fde6f-c566-4779-84e8-82d28b70b5b1": {
+          "type": "floating-box",
+          "settings": {
+            "cstm_css2": "",
+            "title": "<p>Du hast bereits eine Lösung von uns?<\/p>",
+            "text": "<p>Dann entdecke unsere anderen Lösungen wie <strong>Früchtebox, Snackbox oder Jura Kaffeelösungen<\/strong><\/p>",
+            "title_color": "",
+            "text_color": "",
+            "btn_text": "JETZT ENTDECKEN",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#95c11f"
+          }
+        },
+        "74a86009-c08b-459f-a983-7780198046a2": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blurred-hotel-reception.jpg",
+            "title": "<p>OFFICE<\/p>",
+            "text": "<p><strong>Nespresso<\/strong> not only conveys appreciation and recognition to your employees, but also leaves a positive impression on your customers and business partners.<\/p>",
+            "btn_text": "Learn more",
+            "btn_link": "",
+            "btn_color": "#8f7247",
+            "btn_bgcolor": ""
+          }
+        },
+        "3cf8e056-9076-497c-8ac2-d852b21e34fb": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/weird-looking-female-teacher-squinting-pineapple-glasses-isolated-white.jpg",
+            "title": "<p>HOTEL<\/p>",
+            "text": "<p><strong>With Nespresso<\/strong> 's high quality standards , you can exceed your guests' expectations for perfect service and excellent taste.<\/p>",
+            "btn_text": "Learn more",
+            "btn_link": "shopify:\/\/pages\/athlete2-home-v2-brazil",
+            "btn_color": "#8f7247",
+            "btn_bgcolor": ""
+          }
+        },
+        "84b0e29b-8fa6-46da-9682-243712b0c50c": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/apple-fruit-harvest-orchard_8de6595c-619b-4d9e-b7d1-8233f48fba23.jpg",
+            "title": "<p>RESTAURANT & CAFE<\/p>",
+            "text": "<p><strong>Nespresso<\/strong> helps you enrich your guests' dining experience and satisfy even the most demanding tastes.<\/p>",
+            "btn_text": "Learn more",
+            "btn_link": "",
+            "btn_color": "#8f7247",
+            "btn_bgcolor": ""
+          }
+        }
+      },
+      "block_order": [
+        "ee7e8858-ba8e-4041-877d-c71a0281461a",
+        "085fde6f-c566-4779-84e8-82d28b70b5b1",
+        "74a86009-c08b-459f-a983-7780198046a2",
+        "3cf8e056-9076-497c-8ac2-d852b21e34fb",
+        "84b0e29b-8fa6-46da-9682-243712b0c50c"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/ezgif-2-fcd7419be0.jpg",
+        "title": "MASSGESCHNEIDERTE LÖSUNGEN FÜR JEDES UNTERNEHMEN & JEDES GESCHÄFT",
+        "cstm_css": "padding-top: 350px;"
+      }
+    },
+    "1647202399530e02b1": {
+      "type": "image-with-text",
+      "blocks": {
+        "1647202399673dbb73-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COFFEE",
+            "heading_size": "h1"
+          }
+        },
+        "1647202399673dbb73-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A selection of 16 <strong>Nespresso <\/strong>coffees for every taste and every time of the day.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1647202399673dbb73-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover coffees",
+            "button_link": "shopify:\/\/pages\/athlete2-home-brazil"
+          }
+        }
+      },
+      "block_order": [
+        "1647202399673dbb73-0",
+        "1647202399673dbb73-1",
+        "1647202399673dbb73-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Happiness-Hero-1920-x-550-2_1_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1647202687fbfe2a28": {
+      "type": "image-with-text",
+      "blocks": {
+        "16472026878768c032-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COFFEE MACHINES",
+            "heading_size": "h1"
+          }
+        },
+        "16472026878768c032-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Professional coffee machines for your individual requirements.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "16472026878768c032-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover coffee machines",
+            "button_link": "shopify:\/\/pages\/athlete2-home-page-en"
+          }
+        }
+      },
+      "block_order": [
+        "16472026878768c032-0",
+        "16472026878768c032-1",
+        "16472026878768c032-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/big_x6_521aea51-7bf1-4141-b279-d8394c897129.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "16472031766ca88396": {
+      "type": "image-with-text",
+      "blocks": {
+        "1647203176d753ecf9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "COFFEE ACCESSORIES",
+            "heading_size": "h1"
+          }
+        },
+        "1647203176d753ecf9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tailor-made selection of accessories for perfect coffee enjoyment.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1647203176d753ecf9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover accessories",
+            "button_link": "shopify:\/\/pages\/breaky-ch-online-shop"
+          }
+        }
+      },
+      "block_order": [
+        "1647203176d753ecf9-0",
+        "1647203176d753ecf9-1",
+        "1647203176d753ecf9-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/webimage-E1677D47-0281-49BC-A9C1BAFFF0E0B131.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "1647209540cb7c5c71": {
+      "type": "page__services",
+      "blocks": {
+        "faa33b3d-8452-45fb-9ecd-3af1ec2b394a": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Text_Document.png",
+            "title": "Service",
+            "text": "Depending on the machine model, our technicians offer comprehensive on-site service within 6 hours to a maximum of 2 working days"
+          }
+        },
+        "c1b8020c-fad3-4257-a5c5-9daee1b702f3": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.png",
+            "title": "FREE SHIPPING",
+            "text": "Free shipping for orders of 300 or more capsules within 2 working days."
+          }
+        },
+        "7a9937fa-ad84-4b6f-b1ec-1208b855a9c2": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/serwer.png",
+            "title": "EVENT SERVICE",
+            "text": "You are welcome to rent a machine from us for special occasions. As a customer, you benefit from special conditions."
+          }
+        },
+        "2e591c75-e772-4877-ba62-aba6813b6d89": {
+          "type": "services",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dhtty.png",
+            "title": "RECYCLING",
+            "text": "Recycle your used capsules easily and conveniently via the green dot."
+          }
+        }
+      },
+      "block_order": [
+        "faa33b3d-8452-45fb-9ecd-3af1ec2b394a",
+        "c1b8020c-fad3-4257-a5c5-9daee1b702f3",
+        "7a9937fa-ad84-4b6f-b1ec-1208b855a9c2",
+        "2e591c75-e772-4877-ba62-aba6813b6d89"
+      ],
+      "settings": {
+        "title": "<p><strong>NESPRESSO<\/strong> PROFESSIONAL SERVICES<\/p>",
+        "sub_title": "",
+        "text": "",
+        "text2": "",
+        "btn_text": "Discover all services",
+        "btn_link": "shopify:\/\/pages\/datenschutzerklarung-1",
+        "btn_color": "#fcfcfc",
+        "btn_bgcolor": "#8f7247",
+        "bg_img": "shopify:\/\/shop_images\/ezgif-5-32919dbbb9.jpg",
+        "bg_img2": "shopify:\/\/shop_images\/tasse-topview_XL.png"
+      }
+    },
+    "164721505215c8c01b": {
+      "type": "page__learn-more",
+      "settings": {
+        "full-width": true,
+        "title": "<p>LEARN MORE ABOUT <strong>NESPRESSO <\/strong>PROFESSIONAL<\/p>",
+        "img_left": "shopify:\/\/shop_images\/custom_resized_8e0a15b6-1f7f-4fa6-aee1-ea5f208ab322.jpg",
+        "text_left": "Delicious Recipes",
+        "btn_link_left": "shopify:\/\/pages\/delivery-cost-french",
+        "img_right1": "shopify:\/\/shop_images\/weird-looking-female-teacher-squinting-pineapple-glasses-isolated-white.jpg",
+        "text_right1": "Sustainability",
+        "btn_link_right1": "",
+        "img_right2": "shopify:\/\/shop_images\/webimage-E1677D47-0281-49BC-A9C1BAFFF0E0B131.jpg",
+        "text_right2": "Flavored Coffes",
+        "btn_link_right2": "",
+        "btn_text": "Learn more",
+        "btn_color": "#8f7247"
+      }
+    },
+    "16479437284545c26f": {
+      "type": "cofee_calculator",
+      "blocks": {
+        "dcf41501-db77-4b6d-95f1-b6783a2d1a34": {
+          "type": "milk",
+          "settings": {
+            "name": "Full",
+            "from1": 5,
+            "value1": 1.5,
+            "from2": 10,
+            "value2": 1.6,
+            "from3": 15,
+            "value3": 1.7,
+            "from4": 20,
+            "value4": 1.8
+          }
+        },
+        "27bb60c7-fd72-4b65-8ff5-75e72ef924d2": {
+          "type": "milk",
+          "settings": {
+            "name": "Standard"
+          }
+        },
+        "bd79ee65-5d5a-4ae6-8619-f2d49228e310": {
+          "type": "nomilk",
+          "settings": {
+            "name": "Standard"
+          }
+        },
+        "85180d53-b9c7-4555-9eb5-7ba6c625ab0d": {
+          "type": "nomilk",
+          "settings": {
+            "name": "Standard"
+          }
+        }
+      },
+      "block_order": [
+        "dcf41501-db77-4b6d-95f1-b6783a2d1a34",
+        "27bb60c7-fd72-4b65-8ff5-75e72ef924d2",
+        "bd79ee65-5d5a-4ae6-8619-f2d49228e310",
+        "85180d53-b9c7-4555-9eb5-7ba6c625ab0d"
+      ],
+      "settings": {
+        "title": "Kaffee Kalkulator",
+        "btn_text": "Mit Frischmilch oder ohne Frischmilch",
+        "pricePerCofee": "Preis je Kaffee",
+        "costs": "Kosten pro Portion"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164719721376c20468",
+    "1647202399530e02b1",
+    "1647202687fbfe2a28",
+    "16472031766ca88396",
+    "1647209540cb7c5c71",
+    "164721505215c8c01b",
+    "16479437284545c26f"
+  ]
+}

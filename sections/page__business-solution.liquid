@@ -1,0 +1,314 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="page-width{% if section.settings.full-width %}-full-width{% endif %}">
+    <div class="bscs__inner">
+        {% if section.settings.title != blank %}
+            <div class="bscs__title section__title">
+                {{ section.settings.title }}
+            </div>
+        {% endif %}
+
+        {% if section.settings.text != blank %}
+            <div class="bscs__text">
+                {{ section.settings.text }}
+            </div>
+        {% endif %}
+
+        <div class="height100"></div>
+
+        <div class="bsns__items-content__inner">
+            <div class="bsns-arrows">
+                <li class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </li>
+                <li class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </li>
+            </div>
+            <div class="bsns__items">
+                {% for block in section.blocks %}
+                    <div class="bsns__items-content">
+                        <div class="bsns__item">
+                            <div class="bsns__item__left">
+                                <div class="bsns__item__left__img">
+                                    <img src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt }}">
+                                </div>
+                                <div class="bsns__item__left__texts">
+                                    <div class="item-left__title">
+                                        {{ block.settings.title }}
+                                    </div>
+
+                                    <div class="item-left__text">
+                                        {{ block.settings.text }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bsns__item__right">
+                                <div class="bsns__item__right__text">
+                                    {{ block.settings.text2 }}
+                                </div>
+
+                                <div class="bsns__item__right_icons">
+                                    <div class="bsns__item__right_icon">
+                                        <div class="right-icon__image">
+                                            <img src="{{ block.settings.image_icon1 | img_url: '300x' }}" alt="icon">
+                                        </div>
+                                        <div class="right-icon__text">
+                                            {{ block.settings.text_icon1 }}
+                                        </div>
+                                    </div>
+
+                                    <div class="bsns__item__right_icon">
+                                        <div class="right-icon__image">
+                                            <img src="{{ block.settings.image_icon2 | img_url: '300x' }}" alt="icon">
+                                        </div>
+                                        <div class="right-icon__text">
+                                            {{ block.settings.text_icon2 }}
+                                        </div>
+                                    </div>
+
+                                    <div class="bsns__item__right_icon">
+                                        <div class="right-icon__image">
+                                            <img src="{{ block.settings.image_icon3 | img_url: '300x' }}" alt="icon">
+                                        </div>
+                                        <div class="right-icon__text">
+                                            {{ block.settings.text_icon3 }}
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                
+
+                                <div class="bsns__item__right__btns">
+                                    <div 
+                                        style="
+                                                {% if block.settings.btn_color != blank %}color:{{block.settings.btn_color}};{% endif %}{% if block.settings.btn_bgcolor != blank %}background:{{block.settings.btn_bgcolor}};{% endif %}
+                                                "
+                                        class="learn__item__link">
+                                        {{ block.settings.btn_text }}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "Business Solutions",
+        "presets": [
+            {
+                "name": "Business Solutions"
+            }
+        ],
+        "class": "bsns-sol__section p100",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "full-width",
+                "label": "Full Width",
+                "default": false
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "image_picker",
+                "id": "bg_img",
+                "label": "Background Image"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "text2",
+                        "label": "Text2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_icon1",
+                        "label": "Image Icon 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_icon1",
+                        "label": "Text 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_icon2",
+                        "label": "Image Icon 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_icon2",
+                        "label": "Text 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_icon3",
+                        "label": "Image Icon 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text_icon3",
+                        "label": "Text 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_text",
+                        "label": "Button Text",
+                        "default": "Button"
+                    },
+                    {
+                        "type": "url",
+                        "id": "btn_link",
+                        "label": "Button Link"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_color",
+                        "label": "Button Text Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_bgcolor",
+                        "label": "Button Background Color"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+
+
+<style>
+
+    {% if section.settings.bg_img != blank %}
+        .bsns-sol__section {
+            width: 100%;
+            position: relative;
+            background: url({{section.settings.bg_img | img_url: 'master'}});
+            background-size: cover;
+        }
+    {% endif %}
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+      }
+
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('.bsns__items').slick({
+        centerMode: true,
+        arrows: true,
+        centerPadding: '450px',
+        slidesToShow: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '100px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: false,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+</script>

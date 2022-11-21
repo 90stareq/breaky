@@ -1,0 +1,179 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__business-solution",
+      "blocks": {
+        "c7a84184-b299-49dd-9e96-492a0d1405ee": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/apple-fruit-harvest-orchard_8de6595c-619b-4d9e-b7d1-8233f48fba23.jpg",
+            "title": "Office",
+            "text": "Only the best for your working environment",
+            "text2": "Nespresso Professional offers coffee solutions\nspecifically tailored to the needs of your business.\nExplore our business solutions to learn more.",
+            "image_icon1": "shopify:\/\/shop_images\/New_Text_Document_f9663a86-3402-4d6e-9507-c2bc3b1eeb61.png",
+            "text_icon1": "14 professional coffees for every taste and every time of the day",
+            "image_icon2": "shopify:\/\/shop_images\/New_Text_Document_2.png",
+            "text_icon2": "Professional coffee machines tailored to your business needs",
+            "image_icon3": "shopify:\/\/shop_images\/New_Text_Document_3.png",
+            "text_icon3": "Reliable and efficient solutions",
+            "btn_text": "Discover Now",
+            "btn_link": "shopify:\/\/pages\/athlete2-home-v2-brazil",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#8f7247"
+          }
+        },
+        "e419b425-2382-4e48-88ef-b0327962e0e6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vineyards-before-harvest-la-rioja.jpg",
+            "title": "Office",
+            "text": "Only the best for your working environment",
+            "text2": "Nespresso Professional offers coffee solutions\nspecifically tailored to the needs of your business.\nExplore our business solutions to learn more.",
+            "image_icon1": "shopify:\/\/shop_images\/New_Text_Document_f9663a86-3402-4d6e-9507-c2bc3b1eeb61.png",
+            "text_icon1": "14 professional coffees for every taste and every time of the day",
+            "image_icon2": "shopify:\/\/shop_images\/New_Text_Document_2.png",
+            "text_icon2": "Professional coffee machines tailored to your business needs",
+            "image_icon3": "shopify:\/\/shop_images\/New_Text_Document_3.png",
+            "text_icon3": "Reliable and efficient solutions",
+            "btn_text": "Discover Now",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#8f7247"
+          }
+        },
+        "52e5559f-4bfe-4553-b8f6-337066204ae5": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/webimage-E1677D47-0281-49BC-A9C1BAFFF0E0B131.jpg",
+            "title": "Office",
+            "text": "Only the best for your working environment",
+            "text2": "Nespresso Professional offers coffee solutions\nspecifically tailored to the needs of your business.\nExplore our business solutions to learn more.",
+            "image_icon1": "shopify:\/\/shop_images\/New_Text_Document_f9663a86-3402-4d6e-9507-c2bc3b1eeb61.png",
+            "text_icon1": "14 professional coffees for every taste and every time of the day",
+            "image_icon2": "shopify:\/\/shop_images\/New_Text_Document_2.png",
+            "text_icon2": "Professional coffee machines tailored to your business needs",
+            "image_icon3": "shopify:\/\/shop_images\/New_Text_Document_3.png",
+            "text_icon3": "Reliable and efficient solutions",
+            "btn_text": "Discover Now",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#8f7247"
+          }
+        },
+        "160643bc-6dba-4ee4-8cf5-ebe8eb522840": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vineyards-before-harvest-la-rioja.jpg",
+            "title": "Office",
+            "text": "Only the best for your working environment",
+            "text2": "Nespresso Professional offers coffee solutions\nspecifically tailored to the needs of your business.\nExplore our business solutions to learn more.",
+            "image_icon1": "shopify:\/\/shop_images\/New_Text_Document_f9663a86-3402-4d6e-9507-c2bc3b1eeb61.png",
+            "text_icon1": "Nespresso Professional offers coffee solutions specifically tailored to the needs of your business. Explore our business solutions to learn more.",
+            "image_icon2": "shopify:\/\/shop_images\/New_Text_Document_3.png",
+            "text_icon2": "Professional coffee machines tailored to your business needs",
+            "image_icon3": "shopify:\/\/shop_images\/New_Text_Document_2.png",
+            "text_icon3": "Reliable and efficient solutions",
+            "btn_text": "Discover Now",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#8f7247"
+          }
+        },
+        "c45ce639-37f6-441f-961c-ec9fb97d1106": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vineyards-before-harvest-la-rioja.jpg",
+            "title": "Office",
+            "text": "Only the best for your working environment",
+            "text2": "Nespresso Professional offers coffee solutions\nspecifically tailored to the needs of your business.\nExplore our business solutions to learn more.",
+            "image_icon1": "shopify:\/\/shop_images\/New_Text_Document_f9663a86-3402-4d6e-9507-c2bc3b1eeb61.png",
+            "text_icon1": "Nespresso Professional offers coffee solutions specifically tailored to the needs of your business. Explore our business solutions to learn more.",
+            "image_icon2": "shopify:\/\/shop_images\/New_Text_Document_3.png",
+            "text_icon2": "Professional coffee machines tailored to your business needs",
+            "image_icon3": "shopify:\/\/shop_images\/New_Text_Document_2.png",
+            "text_icon3": "Reliable and efficient solutions",
+            "btn_text": "Discover Now",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#8f7247"
+          }
+        }
+      },
+      "block_order": [
+        "c7a84184-b299-49dd-9e96-492a0d1405ee",
+        "e419b425-2382-4e48-88ef-b0327962e0e6",
+        "52e5559f-4bfe-4553-b8f6-337066204ae5",
+        "160643bc-6dba-4ee4-8cf5-ebe8eb522840",
+        "c45ce639-37f6-441f-961c-ec9fb97d1106"
+      ],
+      "settings": {
+        "full-width": true,
+        "title": "TAILOR -MADE SOLUTIONS FOR YOUR COMPANY",
+        "text": "<p><strong>Nespresso Professional<\/strong> offers coffee solutions specifically tailored to the needs of your business. Explore our business solutions to learn more.<\/p>",
+        "bg_img": "shopify:\/\/shop_images\/ezgif-5-32919dbbb9.jpg"
+      }
+    },
+    "1647282036941e6048": {
+      "type": "page__text-between",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/big_x8_f04aa745-5fbe-4e73-94fb-2779d1630b2b.jpg",
+        "image2": "shopify:\/\/shop_images\/big_we6.jpg",
+        "title": "COFFEE TASTING",
+        "text": "Would you like to learn more about Nespresso Professional ? Request a coffee tasting for you and your employees now.",
+        "btn_text": "Request A Free Tasting",
+        "btn_link": "shopify:\/\/products\/7up-citro-24-x-50cl-pet",
+        "btn_color": "#ffffff",
+        "btn_bgcolor": "#8f7247"
+      }
+    },
+    "16472829110f548822": {
+      "type": "page__texts-area",
+      "blocks": {
+        "b772c1b7-23de-4a6f-9d7e-ea768a968e00": {
+          "type": "texts",
+          "settings": {
+            "title": "What makes a business coffee machine?",
+            "text": "<p>visioning.Create.Move.Experience the effect that<strong>Nespresso<\/strong>'s unique coffee specialties have on business partners, customers and employees and scale your business thanks to a good coffee machine that is tailored to your business.Best quality coffee at work ensures lively conversations during the convivial coffee breaks at the coffee bar and a relaxed atmosphere in the company.On this website we present you the advantages of a business coffee machine and introduce you to the product world of<strong>Nespresso<\/strong>Professional.<br\/><br\/>Our large selection of machines includes a wide variety of solutions for our business customers.We are happy to help you find the machine that exactly meets your requirements and needs, to ensure the best coffee experience for you and your customers.With exquisite coffee, freshly prepared by a<strong>Nespresso coffee machine<\/strong>You will not only inspire your guests, customers and employees for your gastronomy.Rather, you are communicating the highest level of professionalism and quality standards.For more than 25 years we have stood for exquisite enjoyment, thanks to sustainable cultivation methods, attention to detail and elegant design.If you want to buy an espresso machine for gastronomy that not only brews normal coffee, but also creates coffee that convinces and inspires your guests in taste, smell, texture and intensity, then choose one of the<strong>Nespresso<\/strong>Professional coffee machines that hotels and restaurants all over the world convince.<br\/><br\/>Discover our rangeof<strong>Nespresso<\/strong><a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/pages\/services\">machine services<\/a>for your company.Our experts will be happy to advise you on our services and machine selection so that you can find the perfect solution for your company.You can contact our customer service daily by telephone on 0800 18 18 444 (toll-free) or via the contact form.<\/p>"
+          }
+        },
+        "bca7af8b-f7ec-4b8f-b16c-f81aaf696675": {
+          "type": "texts",
+          "settings": {
+            "title": "Which Nespresso coffee machine is right for your business?",
+            "text": "<p>In order to find the best coffee maker that best suits the needs of your business from our 7 high-quality machines for business customers, you should be guided by the estimated load and the approximate number of coffees that you want to extract per hour with the machine.In self-service for small seminar rooms, small businesses and start-ups, the<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/momento\"><strong>Nespresso<\/strong> Momento coffee machines<\/a>are the ideal solution with easy operation via the touchscreen display.For a small number of coffee cups, up to 70 per hour, we recommend the<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/order\/machines\/pro\/zenius-kaffeemaschine\">Zenius coffee machine<\/a>from<strong>Nespresso<\/strong>Professional, our smallest machine for business users and a popular choice for hotel rooms.The Gemini professional coffee machines with milk frother and two extraction systems, as well as a capacity of up to 140 coffees per hour, are suitable for reception areas and meeting rooms.If, on the other hand, you need a barista coffee machine with a higher capacity per hour, which is suitable for open-plan offices, company canteens or restaurants, our machine range extends to the<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/order\/machines\/pro\/aguila-220-kaffeemaschine\">AGUILA 220<\/a>and<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/order\/machines\/pro\/aguila-440-kaffeemaschine\">AGUILA 440<\/a>, our most powerful coffee machines with the latest technology and an integrated milk refrigerator.Create up to 400 coffees per hour and serve your guests in upscale restaurants and hotels with coffee specialties from<strong>Nespresso<\/strong>a pleasure that makes you happy and leaves nothing to be desired by guests, colleagues and employees.<\/p>"
+          }
+        },
+        "61e8e5c5-3934-4a9b-b2fc-c5e896d6335f": {
+          "type": "texts",
+          "settings": {
+            "title": "A top-class coffee machine for your company",
+            "text": "<p><strong>Choosing a Nespresso<\/strong>barista machinenot only saves you a lot of work, but also a lot of time, space and money.If you still don't know which model to choose, we'd like to help you choose, so that you buy the<strong>Nespresso<\/strong>coffee machine that best suits your needs.<br\/><br\/>For a non-binding contact to<strong>Nespresso<\/strong>Germany, as well as further information and tips, please use our<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/professional-kontakt\">contact form<\/a>.We look forward to getting to know you personally and helping you choose your<strong>Nespresso business coffee machine<\/strong>and to be your contact person for all other questions.<\/p>"
+          }
+        },
+        "dd7c371d-49d9-449c-9824-d90886452d25": {
+          "type": "texts",
+          "settings": {
+            "title": "International service for your local market",
+            "text": "<p>Since Nespresso is internationally networked, you can also contact us from other countries outside of Germany.In any language, you will receive first-class support from our qualified contacts.It doesn't matter whether it's a business coffee machine or a coffee machine, Nespresso is your contact for all questions relating to high-quality coffee and professional coffee machines.Use our<a href=\"https:\/\/www.nespresso.com\/pro\/de\/de\/professional-kontakt\">contact form<\/a>so that we can contact you personally and advise you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b772c1b7-23de-4a6f-9d7e-ea768a968e00",
+        "bca7af8b-f7ec-4b8f-b16c-f81aaf696675",
+        "61e8e5c5-3934-4a9b-b2fc-c5e896d6335f",
+        "dd7c371d-49d9-449c-9824-d90886452d25"
+      ],
+      "settings": {
+        "bg_color": "#fef8f4"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1647282036941e6048",
+    "16472829110f548822"
+  ]
+}

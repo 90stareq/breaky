@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="cstom-offer">
+    <div class="container">
+        <div class="cstom-offer__form">
+            
+            {% form 'contact', id: form.id %}
+                <div onclick="handleClose()" class="cstom__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                {% render 'form_status', form: form, form_id: formId %}
+                <div class="ds-flex align-center">
+                    {%- assign name_attr = 'contact.form.name' | handle -%}
+                    <label for="contactFormName">{{settings.form_name_text}}</label>
+                    <input type="text" id="contactFormName" name="contact[{{ name_attr }}]" placeholder="{{settings.form_name_ph}}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}" required="required">
+                </div>
+            
+                <div class="ds-flex align-center">
+                    <label for="contactFormEmail">{{settings.form_email_text}}</label>
+                    <input type="email" id="contactFormEmail" name="contact[email]" placeholder="{{settings.form_email_ph}}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required="required">
+                </div>
+
+                <div class="ds-flex align-center">
+                    <label for="contactForphone">
+                        {{settings.form_phone_text}}
+                    </label>
+                    <input type="tel" id="contactForphone" name="contact[phone]" placeholder="{{settings.form_phone_ph}}" autocorrect="off" autocapitalize="off" value="">
+                </div>
+
+                <div class="ds-flex align-center">
+                    <label for="contactForcompany">
+                        {{settings.form_company_text}}
+                    </label>
+                    <input type="text" id="contactForcompany" name="contact[company]" placeholder=" {{settings.form_company_ph}}" autocorrect="off" autocapitalize="off" value="">
+                </div>
+
+                <div class="ds-flex align-center">
+                    <label for="contactForpostcode">
+                        {{settings.form_pc_text}}
+                    </label>
+                    <input type="text" id="contactForpostcode" name="contact[postcode]" placeholder="{{settings.form_pc_ph}}" autocorrect="off" autocapitalize="off" value="" required="required">
+                </div>
+
+
+
+                <div class="ds-flex align-center">
+                    <label for="contactForpackage">
+                        {{settings.form_pkg_text}}
+                    </label>
+                    <input type="text" id="contactForpackage" name="contact[package]" placeholder="{{settings.form_pkg_ph}}" autocorrect="off" autocapitalize="off" value="" required="required">
+                </div>
+
+                <div class="ds-flex align-center">
+                    <label for="contactForportions">
+                        {{settings.form_pda_text}}
+                    </label>
+                    <input type="text" id="contactForportions" name="contact[portions]" placeholder="{{settings.form_pda_ph}}" autocorrect="off" autocapitalize="off" value="" required="required">
+                </div>
+            
+                <div class="ds-flex">
+                    <label class="label-textarea" for="contactFormMessage">
+                        {{settings.form_msg_text}}
+                    </label>
+                    <textarea rows="5" id="contactFormMessage" name="contact[body]" placeholder="{{settings.form_msg_ph}}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                </div> 
+            
+                <button class="btn btn-default">
+                    {{settings.form_sbt_text}}
+                </button>
+                </div>
+            {% endform %}
+        </div>
+    </div>
+</div>

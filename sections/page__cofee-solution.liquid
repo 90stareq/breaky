@@ -1,0 +1,252 @@
+<div 
+    style="
+    {% if section.settings.cstm_css != blank %}{{ section.settings.cstm_css }}{% endif %}
+    "
+    class="cfe-sol__container">
+    <div class="page-width">
+        <div class="cfe-sol__inner">
+            <div class="cfe-sol__top-box">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'floating-box' %}
+
+                            <style>
+                                {% if block.settings.cstm_css2 != blank %}
+                                    .cfe-sol__top-box__item {
+                                        {{ block.settings.cstm_css2 }}
+                                    }
+                                {% endif %}
+
+                                {% if block.settings.title_margin-bottom != blank %}
+                                    .cfe-sol__top-box__item__title {
+                                        margin-bottom:{{ block.settings.title_margin-bottom }}px;
+                                    }
+                                {% endif %}
+                                
+                            </style>
+                        <div 
+                            class="cfe-sol__top-box__item">
+                            <div 
+                                class="cfe-sol__top-box__texts">
+                                <div class="cfe-sol__top-box__item__title">
+                                    {{ block.settings.title }}
+                                </div>
+
+                                <div 
+                                    
+                                style="
+                                {% if block.settings.text_color != blank %}color:{{block.settings.text_color}};{% endif %}
+                                "
+                                    class="cfe-sol__top-box__item__text">
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+
+                            <div class="cfe-sol__top-box__btns">
+                                <div class="cfe-sol__top-box__item__btn">
+                                    <a 
+                                        style="
+                                    {% if block.settings.btn_color != blank %}color:{{block.settings.btn_color}};{% endif %}{% if block.settings.btn_bgcolor != blank %}background:{{block.settings.btn_bgcolor}};{% endif %}
+                                    "
+                                        href="{{ block.settings.btn_link }}">
+                                        {{ block.settings.btn_text }}
+                                    </a>
+        
+                                </div>
+                            </div>
+
+                        </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+
+            <div class="height100"></div>
+
+            <h2 class="section__title cfe__title">
+                {{ section.settings.title }}
+            </h2>
+
+            <div class="height100"></div>
+
+            <div class="cfe-sol__box">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'box' %}
+                        <div class="cfe-sol__box__item">
+                            <div class="cfe-sol__box__img">
+                                <img src="{{ block.settings.image | img_url: '300x' }}" alt="{{ block.settings.image.alt }}">
+                            </div>
+                            <div class="cfe-sol__box__texts">
+                                <div class="cfe-sol__box__item__title">
+                                    {{ block.settings.title }}
+                                </div>
+
+                                <div class="cfe-sol__box__item__text">
+                                    {{ block.settings.text }}
+                                </div>
+                                
+                                <div class="cfe-sol__top-box__item__btn">
+                                    <a 
+                                        style="
+                                    {% if block.settings.btn_color != blank %}color:{{block.settings.btn_color}};{% endif %}{% if block.settings.btn_bgcolor != blank %}background:{{block.settings.btn_bgcolor}};{% endif %}
+                                    "
+                                        href="{{ block.settings.btn_link }}">
+                                        {{ block.settings.btn_text }}
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "Cofee Solution",
+        "presets": [
+            {
+                "name": "Cofee Solution"
+            }
+        ],
+        "class": "cfe-sol__section p100",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "bg_img",
+                "label": "Background Image"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Title"
+            },
+            {
+                "type": "text",
+                "id": "cstm_css",
+                "label": "Custom CSS"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "floating-box",
+                "name": "Floating Box",
+                "limit": 2,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "cstm_css2",
+                        "label": "Custom CSS"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "number",
+                        "id": "title_margin-bottom",
+                        "label": "Margin Bottom"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "color",
+                        "id": "title_color",
+                        "label": "Title Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "text_color",
+                        "label": "Text Color"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_text",
+                        "label": "Button Text",
+                        "default": "Button"
+                    },
+                    {
+                        "type": "url",
+                        "id": "btn_link",
+                        "label": "Button Link"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_color",
+                        "label": "Button Text Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_bgcolor",
+                        "label": "Button Background Color"
+                    }
+                ]
+            },
+            {
+                "type": "box",
+                "name": "Box Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_text",
+                        "label": "Button Text",
+                        "default": "Button"
+                    },
+                    {
+                        "type": "url",
+                        "id": "btn_link",
+                        "label": "Button Link"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_color",
+                        "label": "Button Text Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "btn_bgcolor",
+                        "label": "Button Background Color"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+
+<style>
+
+    {% if section.settings.bg_img != blank %}
+        .cfe-sol__section {
+            width: 100%;
+            position: relative;
+            background: url({{section.settings.bg_img | img_url: 'master'}});
+            background-size: cover;
+        }
+    {% endif %}
+
+</style>

@@ -1,0 +1,450 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-in-plants.jpg",
+            "heading": "Dein Onlineshop für Kaffee, Snacks und Getränke",
+            "heading_size": "h0",
+            "subheading": "Ob im Büro oder Zuhause – wir liefern Dir alles, was du für eine entspannte Pause brauchst. Stell Dir Deine persönliche Snackbox zusammen, befüll Deine individuelle Früchtebox oder verwöhne Dein Team mit einem Kaffeevollautomaten fürs Büro. Wir peppen Deine Pause auf!",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "21463887-7deb-4356-8dc3-a0000012dbf2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-in-plants_6b4939f2-de2d-43ca-9c5f-a10ce1c3869b.jpg",
+            "heading": "Dein Büro wird zum Starbucks®-Coffee House!",
+            "heading_size": "h0",
+            "subheading": "Verwöhne Mitarbeitende und Kundschaft mit feinstem Kaffee aus dem einem Starbucks® Kaffeevollautomaten für Büros.",
+            "button_label": "Jetzt Entdecken",
+            "link": "shopify:\/\/pages\/starbucks",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "730c81b8-e847-4a52-a6a1-5ce2705f8ee8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wood-table-top-blur-kitchen-counter-3d-rendering_1.jpg",
+            "heading": "Coffeebox für dein Geschäft und deinen Arbeitsplatz",
+            "heading_size": "h0",
+            "subheading": "Die Kaffee- und Wassermaschinen, die du brauchst, damit dein Geschäft floriert.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "f4c69c25-a3d0-43d9-8198-8b9338d9c594": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wooden-board-empty-table-front-blurred-background-perspective-brown-wood-blur-coffee-shop-can-be-used-display-montage-your-products-mock-up-display-product_2.jpg",
+            "heading": "Snackbox",
+            "heading_size": "h0",
+            "subheading": "Ganz gleich, ob du Snacks für deine Mitarbeiter an anderen Standorten oder für deine Küche und Speisekammer im Büro brauchst, wir haben eine Option, die deinen Snack-Bedürfnissen (und deinem Budget) entspricht!",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "b5541154-e16d-4b0c-b5e3-c582b5e85239": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/custom_resized_07527d00-80bb-43f1-a749-2d26eafff500.jpg",
+            "heading": "Früchtebox",
+            "heading_size": "h0",
+            "subheading": "Motivation für Angestellten und Kunden, Vitamine zum Wohlfühlen und Energie für die Arbeit. Die besten Früchte und heimischen Obstsorten werden direkt in dein Büro geliefert, was dir viel Zeit, Geld und Nerven spart.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "21463887-7deb-4356-8dc3-a0000012dbf2",
+        "730c81b8-e847-4a52-a6a1-5ce2705f8ee8",
+        "f4c69c25-a3d0-43d9-8198-8b9338d9c594",
+        "b5541154-e16d-4b0c-b5e3-c582b5e85239"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand."
+      }
+    },
+    "1647436785b225cb0a": {
+      "type": "page__cofee-solution",
+      "blocks": {
+        "455032d8-a5c4-430a-8924-f250ab4a1314": {
+          "type": "floating-box",
+          "settings": {
+            "cstm_css2": "padding: 50px 60px 40px",
+            "title": "<p><strong>Starbucks®-Kaffeemaschine fürs Büro<\/strong><\/p>",
+            "title_margin-bottom": 40,
+            "text": "<p>Verwöhne Team und Kundschaft mit feinstem Kaffee aus dem <strong>Starbucks® Kaffeevollautomaten<\/strong> für Büros.<br\/><br\/><\/p>",
+            "title_color": "",
+            "text_color": "",
+            "btn_text": "JETZT ENTDECKEN",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#95c11f"
+          }
+        },
+        "1abf0d87-8023-43df-908e-405b24d6d7bb": {
+          "type": "floating-box",
+          "settings": {
+            "cstm_css2": "padding: 50px 60px 40px",
+            "title": "<p><strong>Du hast schon ein Angebot von uns?<\/strong><\/p>",
+            "text": "<p>Dann erweitere Deinen Genuss mit der <strong>individuellen Früchtebox, <\/strong>der <strong>persönlichen Snackbox <\/strong>oder Lösungen für <strong>Büro-Kaffeemaschinen.<\/strong><\/p>",
+            "title_color": "",
+            "text_color": "",
+            "btn_text": "JETZT GENIESSEN",
+            "btn_link": "",
+            "btn_color": "#fcfcfc",
+            "btn_bgcolor": "#95c11f"
+          }
+        },
+        "51e2cd05-3108-4013-8405-9f670bd3dcb2": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fruechtebox_-_v2_-_SCHWARZ_9.jpg",
+            "title": "<p>Starbucks®<\/p>",
+            "text": "<p><br\/>Für Deine Mitarbeitenden und Kunden nur das Beste: Premium-Kaffee aus Kaffeevollautomaten von Starbucks®. Ob Büro, Bäckerei, Agentur, Laden oder Kanzlei - verwöhne Deine Gäste mit den weltweit beliebten Kaffeekreationen von Starbucks®. Werde jetzt Teil des We Proudly Serve Starbucks® Coffee Programms!<br\/><\/p>",
+            "btn_text": "Zum Starbucks-Angebot",
+            "btn_link": "",
+            "btn_color": "#95c11f",
+            "btn_bgcolor": "#ffffff"
+          }
+        },
+        "4448f64c-f3c7-4ff6-98f0-6045b6634404": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/custom_resized_f110895c-8b33-46b2-85ce-a961b52cdde9.jpg",
+            "title": "<p>Früchtebox<\/p>",
+            "text": "<p><br\/>Der gesunde Engergiekick fürs Büro: Bring Dein Team mit frischen Früchten zu Höchstleistungen! Du hast bestimmt Wichtigeres zu tun als einzukaufen:  Lass uns das für Dich machen. Die gesunden Snacks stellen wir nach Deinen Wünschen zusammen und liefern Dir die Früchtebox zu jeder Zeit direkt ins Büro.<br\/><br\/><\/p>",
+            "btn_text": "Zur Früchtebox",
+            "btn_link": "shopify:\/\/pages\/fruchtebox-2",
+            "btn_color": "#95c11f",
+            "btn_bgcolor": "#fcfcfc"
+          }
+        },
+        "b6ab8dbd-d7c8-4a0d-9e31-5c58ad35f87f": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fruechtebox_-_v2_-_SCHWARZ_8.jpg",
+            "title": "<p>Snackbox<br\/><br\/><\/p>",
+            "text": "<p>Kleine Snacks sorgen für motivierten Teamspirit. Das Hüngerchen zwischendurch kann Euch nichts mehr anhaben: In Eurer persönlichen Snackbox findet Ihr immer die passende, leckere Kleinigkeit. Die Snackbox tauschen wir in der von dir gewünschten Häufigkeit aus - damit die gute Laune immer anhält.<br\/><br\/><\/p>",
+            "btn_text": "Zur Snackbox",
+            "btn_link": "",
+            "btn_color": "#95c11f",
+            "btn_bgcolor": ""
+          }
+        },
+        "5b7d4ef5-2fbb-4d6b-aeb2-9e4d84621e09": {
+          "type": "box",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/custom_resized_f4e32396-3d58-44d6-beab-5736919865ce.jpg",
+            "title": "<p>Kaffeemaschinen fürs Büro<br\/><br\/><\/p>",
+            "text": "<p>Womit haben Leistungstiefs keine Chance? Genau: Mit feinem Kaffee! Er bringt Dein Team in Schwung und sorgt für die Extraportion Energie im herausfordernden Arbeitstag. Mit Breaky wird Eure Kaffeepause zum echten Genuss: Bei uns findest auch Du die passende Kaffeemaschine fürs Büro.<br\/><br\/><\/p>",
+            "btn_text": "Zur Coffeebox",
+            "btn_link": "shopify:\/\/pages\/jura_losung",
+            "btn_color": "#95c11f",
+            "btn_bgcolor": ""
+          }
+        }
+      },
+      "block_order": [
+        "455032d8-a5c4-430a-8924-f250ab4a1314",
+        "1abf0d87-8023-43df-908e-405b24d6d7bb",
+        "51e2cd05-3108-4013-8405-9f670bd3dcb2",
+        "4448f64c-f3c7-4ff6-98f0-6045b6634404",
+        "b6ab8dbd-d7c8-4a0d-9e31-5c58ad35f87f",
+        "5b7d4ef5-2fbb-4d6b-aeb2-9e4d84621e09"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/ezgif-2-fcd7419be0.jpg",
+        "title": "MASSGESCHNEIDERTE LÖSUNGEN FÜR JEDES BÜRO & JEDES GESCHÄFT",
+        "cstm_css": "padding-top: 400px;"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "6b7287e3-d4f5-46ff-abbc-67ba5fb5f7bc": {
+          "type": "caption",
+          "settings": {
+            "caption": "We proudly serve starbucks",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Höchste Kaffeequalität für Deinen Arbeitsplatz",
+            "heading_size": "h1"
+          }
+        },
+        "af36800b-ca98-411c-99a8-226d29a055bf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Verwöhne Team und Gäste mit Premium-Kaffee von einer der weltweit angesehensten Marken. Wenn Du Starbucks®-Kaffee anbietest, zeigst du Deinen Mitarbeitenden Deine Wertschätzung und hinterlässt einen positiven Eindruck bei Deiner Kundschaft.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "5d7bbbfc-8a5b-4976-a190-772e6855e036": {
+          "type": "button",
+          "settings": {
+            "button_label": "JETZT MEMBER WERDEN",
+            "button_link": "shopify:\/\/pages\/starbucks"
+          }
+        }
+      },
+      "block_order": [
+        "6b7287e3-d4f5-46ff-abbc-67ba5fb5f7bc",
+        "heading",
+        "af36800b-ca98-411c-99a8-226d29a055bf",
+        "5d7bbbfc-8a5b-4976-a190-772e6855e036"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_1_2.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "16475229400d5e8b0d": {
+      "type": "image-with-text",
+      "blocks": {
+        "049da216-c7ee-4077-a5a5-f6891b4b7172": {
+          "type": "caption",
+          "settings": {
+            "caption": "Kaffee-Lösungen",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "16475229395b278973-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kaffeevollautomaten für jeden Bedarf",
+            "heading_size": "h1"
+          }
+        },
+        "16475229395b278973-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wo Kunden, Mitarbeitende und Gäste Kaffee geniessen, herrscht eine entspannte, kommunikative und produktive Atmosphäre. Setzt Du auf Genuss, Kaffeespezialitätenvielfalt und Ästhetik? Dann liegst du mit <strong>Breaky Small Office Solutions <\/strong>goldrichtig! Wir bieten Lösungen mit Kaffeevollautomaten, die auf die Bedürfnisse Deines Unternehmens zugeschnitten sind.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "16475229395b278973-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "KAFFEE GENIESSEN",
+            "button_link": "shopify:\/\/pages\/jura_losung"
+          }
+        }
+      },
+      "block_order": [
+        "049da216-c7ee-4077-a5a5-f6891b4b7172",
+        "16475229395b278973-0",
+        "16475229395b278973-1",
+        "16475229395b278973-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/big_x6_1_2_4c3e0639-5f60-45e4-831e-9a6aad17a0c7.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "16479428991700ba52": {
+      "type": "image-with-text",
+      "blocks": {
+        "16479428998ed0f571-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Früchtebox für den extra Energiekick",
+            "heading_size": "h1"
+          }
+        },
+        "16479428998ed0f571-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gesunde Energie für Dein Team, ein fruchtiges Willkommen für Deine Gäste: In Eurer individuellen Früchtebox liefern wir Euch Vitaminbomben in Form von frischen Früchten direkt ins Büro. Selber einkaufen war gestern - bestell noch heute deine Breaky Früchtebox.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "16479428998ed0f571-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "VITAMINE TANKEN",
+            "button_link": "shopify:\/\/pages\/fruchtebox-2"
+          }
+        }
+      },
+      "block_order": [
+        "16479428998ed0f571-0",
+        "16479428998ed0f571-1",
+        "16479428998ed0f571-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/X6_rendering4_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16479429562092c4cc": {
+      "type": "image-with-text",
+      "blocks": {
+        "16479429565a7725fd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nie wieder Formtiefs dank unserer Snackbox",
+            "heading_size": "h1"
+          }
+        },
+        "16479429565a7725fd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Süsse Snacks? Salzige Snacks? Die Entscheidung ist kein Problem: Deine Breaky Snackbox kannst du so bestücken, wie es Deinem Team am besten passt. Formtiefs durch den kleinen Hunger sind kein Thema mehr, ab sofort stehen immer schnelle Snacks für zwischendurch bereit. Ob für KMUs oder Grossfirmen - unser Kurier tauscht die Snacks in von Dir gewünschten Abständen aus.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "16479429565a7725fd-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "JETZT SNACKEN",
+            "button_link": "shopify:\/\/pages\/snackbox-2"
+          }
+        }
+      },
+      "block_order": [
+        "16479429565a7725fd-0",
+        "16479429565a7725fd-1",
+        "16479429565a7725fd-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_1_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-3": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GET IN TOUCH<\/p>"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sag uns, was du brauchst. Wir kümmern uns um deine Pausen-Wünsche.",
+            "heading_size": "h1"
+          }
+        },
+        "85f44e88-6f36-4061-ac46-2d5493e15d46": {
+          "type": "button",
+          "settings": {
+            "button_label": "JETZT KONTAKTIEREN",
+            "button_link": "shopify:\/\/pages\/angebot-anfordern",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading",
+        "85f44e88-6f36-4061-ac46-2d5493e15d46"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 84,
+        "padding_bottom": 84
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "1647436785b225cb0a",
+    "image-with-text",
+    "16475229400d5e8b0d",
+    "16479428991700ba52",
+    "16479429562092c4cc",
+    "rich-text-3"
+  ]
+}

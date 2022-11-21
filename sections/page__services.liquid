@@ -1,0 +1,171 @@
+<div class="page-width">
+    <div class="services__inner">
+        <div class="section__title services__title">
+            {{ section.settings.title }}
+        </div>
+
+        {% if section.settings.sub_title != blank %}
+            <div class="img-text2__sub_title">
+                {{ section.settings.sub_title }}
+            </div>
+        {% endif %}
+
+        {% if section.settings.text != blank %}
+            <div class="img-text2__text">
+                {{ section.settings.text }}
+            </div>
+        {% endif %}
+
+        {% if section.settings.text2 != blank %}
+            <div class="img-text2__text2">
+                {{ section.settings.text2 }}
+            </div>
+        {% endif %}
+
+        <div class="services__content">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'services' %}
+                        <div class="services__item">
+                            <div class="services__item__img">
+                                <img src="{{ block.settings.image | img_url: '200x' }}" alt="{{ block.settings.image.alt }}">
+                            </div>
+
+                            <div class="services__item__title">
+                                {{ block.settings.title }}
+                            </div>
+
+                            <div class="services__item__text">
+                                {{ block.settings.text }}
+                            </div>
+                        </div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+
+        <div class="height100"></div>
+        <div class="services__btn">
+            <div class="cfe-sol__top-box__item__btn">
+                <a 
+                    style="
+                {% if section.settings.btn_color != blank %}color:{{section.settings.btn_color}};{% endif %}{% if section.settings.btn_bgcolor != blank %}background:{{section.settings.btn_bgcolor}};{% endif %}
+                "
+                    href="{{ section.settings.btn_link }}">
+                    {{ section.settings.btn_text }}
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    {% if section.settings.bg_img2 != blank %}
+        <div class="services__right-img">
+            <img src="{{ section.settings.bg_img2 | img_url: '500x' }}" alt="deco image">
+        </div>
+    {% endif %}
+</div>
+
+{% schema %}
+    {
+        "name": "Services",
+        "presets": [
+            {
+                "name": "Services"
+            }
+        ],
+        "class": "services__section p100",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "text",
+                "id": "sub_title",
+                "label": "Sub-Title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "richtext",
+                "id": "text2",
+                "label": "Text2"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Text",
+                "default": "Button"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
+            },
+            {
+                "type": "color",
+                "id": "btn_color",
+                "label": "Button Text Color"
+            },
+            {
+                "type": "color",
+                "id": "btn_bgcolor",
+                "label": "Button Background Color"
+            },
+            {
+                "type": "image_picker",
+                "id": "bg_img",
+                "label": "Background Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "bg_img2",
+                "label": "Bottom Right Image"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "services",
+                "name": "Services",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Service"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+
+<style>
+
+    {% if section.settings.bg_img != blank %}
+        .services__section {
+            background: url({{section.settings.bg_img | img_url: 'master'}});
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    {% endif %}
+
+</style>

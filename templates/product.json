@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "164796274452251277": {
+      "type": "cofee_calculator",
+      "blocks": {
+        "cc73e344-ec8e-4aa0-b032-f6f64606f4f8": {
+          "type": "milk",
+          "settings": {
+            "name": "full",
+            "from1": 5,
+            "value1": "1.21",
+            "from2": 10,
+            "value2": "0.87",
+            "from3": 15,
+            "value3": "0.65",
+            "value4": "",
+            "value5": "",
+            "value6": "",
+            "value7": "",
+            "value9": "",
+            "value10": ""
+          }
+        },
+        "aa4563cf-66b3-4850-847a-796b23541882": {
+          "type": "nomilk",
+          "settings": {
+            "name": "full",
+            "from1": 5,
+            "value1": "1.21",
+            "from2": 10,
+            "value2": "0.56",
+            "from3": 15,
+            "value3": "0.23",
+            "value4": "",
+            "value5": "",
+            "value6": "",
+            "value7": "",
+            "value9": "",
+            "value10": ""
+          }
+        },
+        "dfa51e7c-fc1a-4568-b0cb-5f4b40ed090b": {
+          "type": "milk",
+          "settings": {
+            "name": "standard",
+            "from1": 5,
+            "value1": "1.54",
+            "from2": 10,
+            "value2": "0.76",
+            "from3": 15,
+            "value3": "0.21",
+            "value4": "",
+            "value5": "",
+            "value6": "",
+            "value7": "",
+            "value9": "",
+            "value10": ""
+          }
+        },
+        "062e9d2f-4852-4144-9b02-9b54d249906c": {
+          "type": "nomilk",
+          "settings": {
+            "name": "standard",
+            "from1": 5,
+            "value1": "1.90",
+            "from2": 10,
+            "value2": "0.98",
+            "from3": 15,
+            "value3": "0.32",
+            "value4": "",
+            "value5": "",
+            "value6": "",
+            "value7": "",
+            "value9": "",
+            "value10": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc73e344-ec8e-4aa0-b032-f6f64606f4f8",
+        "aa4563cf-66b3-4850-847a-796b23541882",
+        "dfa51e7c-fc1a-4568-b0cb-5f4b40ed090b",
+        "062e9d2f-4852-4144-9b02-9b54d249906c"
+      ],
+      "settings": {
+        "title": "Cofee Calculator",
+        "btn_text": "With milk or without milk?",
+        "pricePerCofee": "Price Per Cofee",
+        "costs": "Costs"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "164796274452251277"
+  ]
+}

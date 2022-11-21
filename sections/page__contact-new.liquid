@@ -1,0 +1,348 @@
+<div class="new-container">
+    <div class="contact-new__inner">
+      <div class="con-new__left">
+        {% form 'contact', id: form.id, class: "my-form omnisend-subscribe-form" %}
+          {% render 'form_status', form: form, form_id: formId %}
+        <div class="step1 step">
+          <h2 class="step__title">
+            {{ section.settings.step1 }}
+          </h2>
+
+          <div class="step__checkbox">
+            {% for block in section.blocks %}
+              <div class="step-chck__item">
+                <input type="checkbox" name="contact[{{block.settings.checkbox | handleize}}]" id="checkbox_item_{{forloop.index}}" class="step-chckb omnisend-subscribe-input-{{block.settings.checkbox | handleize}}" value="{{block.settings.checkbox | handleize}}">
+                <label 
+                  style="
+                {% if block.settings.font_size != blank %}font-size:{{block.settings.font_size}}px;{% endif %}"
+                  for="checkbox_item_{{forloop.index}}">{{block.settings.checkbox}}</label>
+
+                <div class="step-chck__item-sub">
+                  {% if block.settings.sub-checkbox1 != blank %}
+                    
+                  <div class="step-chck__item-sub_item">
+                  <input type="checkbox" name="contact[{{block.settings.sub-checkbox1 | handleize}}]" id="checkbox_item_{{forloop.index}}" class="step-chckb omnisend-subscribe-input-{{block.settings.sub-checkbox1 | handleize}}" value="{{block.settings.sub-checkbox1 | handleize}}">
+                  <label for="checkbox_item_{{forloop.index}}">{{block.settings.sub-checkbox1}}</label>
+                </div>
+                {% endif %}
+
+                {% if block.settings.sub-checkbox1 != blank %}
+                  <div class="step-chck__item-sub_item">
+                  <input type="checkbox" name="contact[{{block.settings.sub-checkbox2 | handleize}}]" id="checkbox_item_{{forloop.index}}" class="step-chckb omnisend-subscribe-input-{{block.settings.sub-checkbox2 | handleize}}" value="{{block.settings.sub-checkbox2 | handleize}}">
+                  <label for="checkbox_item_{{forloop.index}}">{{block.settings.sub-checkbox2}}</label>
+                </div>
+                {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="step2 step">
+          <h2 class="step__title">
+            {{ section.settings.step2 }}
+          </h2>
+
+          <div class="step2__inputs">
+            <div class="contactnew__item">
+              <label for="contactFormEmpNo">
+                {{section.settings.step2_input1}}
+              </label>
+              <input class="omnisend-subscribe-input-numberofemployee" type="text" id="contactFormEmpNo" name="contact[NumberOfEmployee]" required="required">
+            </div>
+
+            <div class="contactnew__item">
+              <label for="contactFormSnacksBeverage">
+                {{section.settings.step2_input2}}
+              </label>
+              <input class="omnisend-subscribe-input-snacks-n-beverages" type="text" id="contactFormSnacksBeverage" name="contact[Snacks-n-Beverages]" required="required">
+            </div>
+          </div>
+        </div>
+
+        <div class="step3 step">
+          {%- if section.settings.step3 != blank -%}
+              <h2 class="step__title">{{ section.settings.step3 }}</h3>
+          {%- endif -%}
+          <div class="contactnew-input__container">
+            <div class="contactnew__item">
+              {%- assign name_attr = 'contact.form.name' | handle -%}
+              <label for="contactFormName">
+                {{section.settings.step3_input1}}
+              </label>
+              <input class="omnisend-subscribe-input-name" type="text" id="contactFormName" name="contact[{{ name_attr }}]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}" required="required">
+            </div>
+
+
+            <div class="contactnew__item">
+              <label for="contactFormContact">
+                {{section.settings.step3_input2}}
+              </label>
+              <input class="omnisend-subscribe-input-company" type="text" id="contactFormContact" name="contact[Company]" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}" required="required">
+            </div>
+        
+            <div class="contactnew__item">
+              <label for="contactFormEmail">
+                {{section.settings.step3_input3}}
+              </label>
+              <input class="omnisend-subscribe-input-email" type="email" id="contactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required="required">
+            </div>
+        
+
+
+            <div class="contactnew__item">
+              <label for="contactFormPhone">
+                {{section.settings.step3_input4}}
+              </label>
+              <input class="omnisend-subscribe-input-phone" type="text" id="contactFormPhone" name="contact[Phone]" required="required">
+            </div>
+
+
+
+
+            <div class="contactnew__item">
+              <label for="contactFormEmployee">
+                {{section.settings.step3_input5}}
+              </label>
+              <input class="omnisend-subscribe-input-employee" type="number" id="contactFormEmployee" name="contact[Employee]">
+            </div>
+
+
+
+            <div class="contactnew__item">
+              <label for="contactFormAddress">
+                {{section.settings.step3_input6}}
+              </label>
+              <input class="omnisend-subscribe-input-address" type="text" id="contactFormAddress" name="contact[Address]">
+            </div>
+
+
+
+              <div class="city-zip-state">
+                  <div class="contactnew__item">
+                      <label for="contactFormCity">
+                        {{section.settings.step3_input7}}
+                      </label>
+                      <input class="omnisend-subscribe-input-zip" type="text" id="contactFormCity" name="contact[City]" required="required">
+                  </div>
+
+
+                  <div class="contactnew__item">
+                      <label for="contactFormState">
+                        {{section.settings.step3_input8}}
+                      </label>
+                      <input class="omnisend-subscribe-input-state" type="text" id="contactFormState" name="contact[State]" required="required">
+                  </div>
+
+
+                  <div class="contactnew__item">
+                      <label for="contactFormZip">
+                        {{section.settings.step3_input9}}
+                      </label>
+                      <input class="omnisend-subscribe-input-zip" type="text" id="contactFormZip" name="contact[Zip]" required="required">
+                  </div>
+              </div>
+
+
+
+            <div class="contactnew__item">
+              <label class="label-textarea" for="contactFormMessage">
+                {{section.settings.step3_input10}}
+              </label>
+              <textarea class="omnisend-subscribe-input-message" rows="5" id="contactFormMessage" name="contact[body]" required="required">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            </div>
+
+
+            <div class="step-chck__item">
+              <input type="checkbox" name="contact[Cofee Sample]" id="checkbox_item_sample" class="step-chckb omnisend-subscribe-input-cofeesample" value="Sample Cofee">
+              <label for="checkbox_item_sample">
+                {{section.settings.step3_checkbox_1}}
+              </label>
+            </div>
+
+
+            <div class="step-chck__item">
+              <input type="checkbox" name="contact[Subscribe]" id="checkbox_item_sub" class="step-chckb omnisend-subscribe-input-newsletter-subscribe" value="Subscribe">
+              <label for="checkbox_item_sub">
+                {{section.settings.step3_checkbox_2}}
+              </label>
+            </div>
+
+
+        
+            <button class="btn btn-contactnew">{{section.settings.btn_text-sbt}}</button>
+          </div>
+        </div>
+        {% endform %}
+      </div>
+      <div class="con-new__right">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+      </div>
+    
+      </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Contact Form New",
+        "presets": [
+            {
+                "name": "Contact Form New"
+            }
+        ],
+        "class": "contact-form__section",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "step1",
+            "label": "Step 1 Title"
+          },
+          {
+            "type": "header",
+            "content": "Step 2 Content"
+          },
+          {
+            "type": "text",
+            "id": "step2",
+            "label": "Step 2 Title"
+          },
+          {
+            "type": "text",
+            "id": "step2_input1",
+            "label": "Step 2 Input 1",
+            "default": "NUMBER OF EMPLOYEES AT YOUR LOCATION"
+          },
+          {
+            "type": "text",
+            "id": "step2_input2",
+            "label": "Step 2 Input 2",
+            "default": "HOW MANY SNACKS AND BEVERAGES STATIONS?"
+          },
+          {
+            "type": "header",
+            "content": "Step 3 Content"
+          },
+          {
+              "type": "text",
+              "id": "step3",
+              "label": "Step 3 Title"
+          },
+          {
+            "type": "text",
+            "id": "step3_input1",
+            "label": "Step 3 Input 1",
+            "default": "NAME"
+          },
+          {
+            "type": "text",
+            "id": "step3_input2",
+            "label": "Step 3 Input 2",
+            "default": "COMPANY*"
+          },
+          {
+            "type": "text",
+            "id": "step3_input3",
+            "label": "Step 3 Input 3",
+            "default": "EMAIL"
+          },
+          {
+            "type": "text",
+            "id": "step3_input4",
+            "label": "Step 3 Input 4",
+            "default": "PHONE*"
+          },
+          {
+            "type": "text",
+            "id": "step3_input5",
+            "label": "Step 3 Input 5",
+            "default": "NUMBER OF EMPLOYEES"
+          },
+          {
+            "type": "text",
+            "id": "step3_input6",
+            "label": "Step 3 Input 6",
+            "default": "STREET ADDRESS"
+          },
+          {
+            "type": "text",
+            "id": "step3_input7",
+            "label": "Step 3 Input 7",
+            "default": "CITY*"
+          },
+          {
+            "type": "text",
+            "id": "step3_input8",
+            "label": "Step 3 Input 8",
+            "default": "STATE*"
+          },
+          {
+            "type": "text",
+            "id": "step3_input9",
+            "label": "Step 3 Input 9",
+            "default": "ZIP*"
+          },
+          {
+            "type": "text",
+            "id": "step3_input10",
+            "label": "Step 3 Input 10",
+            "default": "MESSAGE"
+          },
+          {
+            "type": "text",
+            "id": "step3_checkbox_1",
+            "label": "Step 3 Checkbox 1",
+            "default": "GET A FREE COFFEE SAMPLE (AVAILABLE ONLY TO THE SAN FRANCISCO BAY AREA AND SACRAMENTO, CALIFORNIA)"
+          },
+          {
+            "type": "text",
+            "id": "step3_checkbox_2",
+            "label": "Step 3 Checkbox 2",
+            "default": "SUBSCRIBE TO OUR NEWSLETTER FOR PRODUCT UPDATES, BREWING TIPS & SPECIAL OFFERS"
+          },
+          {
+            "type": "text",
+            "id": "btn_text-sbt",
+            "label": "Submit button",
+            "default": "Send"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "check",
+            "name": "Checkbox",
+            "settings": [
+              {
+                "type": "text",
+                "id": "checkbox",
+                "label": "Checkbox"
+              },
+              {
+                "type": "number",
+                "id": "font_size",
+                "label": "Font Size"
+              },
+              {
+                "type": "header",
+                "content": "Sub-Inputs"
+              },
+              {
+                "type": "text",
+                "id": "sub-checkbox1",
+                "label": "Sub-Checkbox 1"
+              },
+              {
+                "type": "text",
+                "id": "sub-checkbox2",
+                "label": "Sub-Checkbox 2"
+              }
+            ]
+          }
+        ]
+        
+    }
+{% endschema %}
